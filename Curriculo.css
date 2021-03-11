@@ -1,0 +1,24 @@
+body{
+	background-color: #00BFFF;
+}
+h1{
+	text-align: center;
+}
+#T1{
+	text-align: left;
+}
+#T2{
+	text-align: left;
+}
+#T3{
+	text-align: left;
+}
+#T4{
+	text-align: left;
+}
+p{
+	font-size: 20px;
+}
+#Data{
+	font-size: 15px;
+}
