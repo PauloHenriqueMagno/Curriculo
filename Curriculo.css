@@ -1,24 +1,16 @@
 body{
-	background-color: #00BFFF;
+	margin: 20px 20px 20px 20px;
+	background-color: #00BFFF;	
+}
+hr{
+	color: black;
 }
 h1{
-	text-align: center;
+	text-align: center; 
 }
-#T1{
-	text-align: left;
-}
-#T2{
-	text-align: left;
-}
-#T3{
-	text-align: left;
-}
-#T4{
+h2{
 	text-align: left;
 }
 p{
-	font-size: 20px;
-}
-#Data{
-	font-size: 15px;
+	font-size: 18px;
 }
