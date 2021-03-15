@@ -1,7 +1,7 @@
 body{
 	background-color: #00BFFF;
 	font-size: 18px;
-	font-family: Times New Roman, Arial;
+	font-family: "Times New Roman", "Arial";
 }
 #all{
 	margin: auto;
@@ -15,7 +15,7 @@ body{
 	border: 1px solid black;
 }
 hr{
-	color: solid black;
+	color: black;
 }
 h1{
 	text-align: center; 
