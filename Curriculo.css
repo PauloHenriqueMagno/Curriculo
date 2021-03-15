@@ -1,6 +1,14 @@
 body{
 	margin: 20px 20px 20px 20px;
-	background-color: #00BFFF;	
+	background-color: #00BFFF;
+	font-size: 18px;
+	font-family: Times New Roman, Arial;
+}
+#header{
+	background-color: purple;
+	margin: auto;
+	width: 900px;
+	border: black 1px solid;
 }
 hr{
 	color: black;
@@ -10,7 +18,4 @@ h1{
 }
 h2{
 	text-align: left;
-}
-p{
-	font-size: 18px;
 }
