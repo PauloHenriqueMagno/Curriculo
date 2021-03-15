@@ -1,17 +1,21 @@
 body{
-	margin: 20px 20px 20px 20px;
 	background-color: #00BFFF;
 	font-size: 18px;
 	font-family: Times New Roman, Arial;
 }
-#header{
-	background-color: purple;
+#all{
 	margin: auto;
 	width: 900px;
-	border: black 1px solid;
+	border: 1px solid black;
+	padding: 7px 7px;
+	background-color: #578700;
+}
+#header{
+	background-color: purple;
+	border: 1px solid black;
 }
 hr{
-	color: black;
+	color: solid black;
 }
 h1{
 	text-align: center; 
