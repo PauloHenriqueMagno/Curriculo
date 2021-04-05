@@ -108,6 +108,12 @@ main .coluna section{
 	margin: 10px 5px;
 	text-align: justify;
 }
+main .coluna section p{
+	margin: 8px 0 0 0;
+}
+main .coluna section ul{
+	margin: 8px 0 0 0;
+}
 main .coluna section ul li{
 	margin:0 0 5px;
 }
