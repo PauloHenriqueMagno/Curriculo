@@ -121,6 +121,7 @@ main .coluna section ul li a{
 }
 
 /*EXTRA*/
+
 /*Botão de tema*/
 :root{
 	--none: none;
@@ -131,7 +132,7 @@ input{
 }
 label{
 	position: absolute;
-	right: 18%;
+	right: 21%;
 }
 .sun{
 	position: absolute;
@@ -208,5 +209,11 @@ label{
 	/*Footer*/
 	footer .redes-sociais ul li a img{
 		max-width: 4vw;
+	}
+	
+	/*EXTRAS*/
+	label{
+		position: absolute;
+		right: 18%;
 	}
 }
