@@ -5,6 +5,7 @@
 	--container-size: 90vw;
 	--footer-font-color: white;
 	--cor-de-fundo-secundario: white;
+	--font-color: black;
 }
 /*Estilos Gerais*/
 html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li, a, main{
@@ -32,6 +33,7 @@ body{
 	font-family: 'Times New Roman', Arial;
 	font-size: var(--font-size-padrão);
 	background-color: var(--cor-de-fundo-secundario);
+	color: var(--font-color);
 }
 
 /*HEADER*/
@@ -61,7 +63,7 @@ header .coluna ul li{
 	margin: 0 0 14px;
 }
 header .coluna ul li a{
-	color: black;
+	color: var(--font-color);
 }
 
 /*FOOTER*/
@@ -110,7 +112,7 @@ main .coluna section ul li h3{
 	text-align: left;
 }
 main .coluna section ul li a{
-	color: black;
+	color: var(--font-color);
 	text-decoration: underline;
 }
 
