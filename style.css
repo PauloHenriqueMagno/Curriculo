@@ -127,7 +127,7 @@ main .coluna section ul li a{
 		flex-basis:30%;
 	}
 	header .coluna img{
-		max-width: 30vw;
+		max-width: 20vw;
 		/*border-radius: 10%;*/
 		display: initial;
 		margin-left: initial;
