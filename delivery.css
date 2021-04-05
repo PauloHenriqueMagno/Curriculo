@@ -4,13 +4,14 @@ body {
 	background-size: 121px 80px;
 	color: #000;
 	font-size: 20px;
-	font-family: Times New Roman, Arial;
-	margin: 0; padding: 0;
+	font-family: "Times New Roman", Arial;
+	margin: 0; 
+	padding: 0;
 	text-align: center;
 }
 
 
-#tudo {
+.tudo {
 	background: #FFF;
 	border: #000 1px solid;
 	width: 800px;
@@ -19,7 +20,7 @@ body {
 }
 
 
-#cabecalho { 
+.cabecalho { 
 	background: purple;
 	font-size: 18px;
 	text-align: center;
@@ -27,30 +28,29 @@ body {
 }
 
 
-#menu {
+.menu {
 	background: purple;
 	height: 40px;
-	margin: 0; 
-	padding: 0;
+	margin: 0px; 
+	padding: 0px;
 }
-#menu ul {
-	margin: 0;
-	padding: 0;
-	margin-left: 6px;
+.menu ul {
+	margin: 0px;
+	padding: 0px;
+	margin-left: 7px;
 }
-#menu ul li {
+.menu ul li {
 	display: inline;
 }
-#menu ul li a {
+.menu ul li a {
 	background: green;
 	color: yellow;
 	border: 1px #FFF solid;
-	float: left;
 	padding: 5px 7px;
 	margin: 2px;
 	text-decoration: none;
 }
-#menu ul li a:hover {
+.menu ul li a:hover {
 	background: #FFF;
 	color: #F00;
 	border: #F00 1px solid;
@@ -58,7 +58,7 @@ body {
 }
 
 
-#conteudo {
+.conteudo {
 	clear: both;
 	font-size: 18px;
 	padding: 5px;
@@ -68,7 +68,7 @@ h2 {
 	text-align: center;
 }
 
-#rodape {
+.rodape {
 	clear: both;
 	background: purple;
 	color: #FFF;
@@ -76,15 +76,15 @@ h2 {
 	padding: 10px;
 	height: 40px;
 }
-#rodape ul{
+.rodape ul{
 	margin: 0;
 	padding: 0;
 	margin-left: 6px;
 }
-#rodape ul li{
+.rodape ul li{
 	display: inline;
 }
-#rodape ul li a{
+.rodape ul li a{
 	background: green;
 	color: yellow;
 	border: 1px #FFF solid;
@@ -93,7 +93,7 @@ h2 {
 	margin: 2px;
 	text-decoration: none;
 }
-#rodape ul li a:hover{
+.rodape ul li a:hover{
 	background: #FFF;
 	color: #F00;
 	border: #F00 1px solid;
