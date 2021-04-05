@@ -19,10 +19,6 @@ html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li
 	padding: 30px;
 }
 
-.coluna{
-	flex-basis: 49%;
-}
-
 .hidden{
 	display: none;
 }
@@ -117,6 +113,9 @@ main .coluna section ul li a{
 		flex-wrap: wrap;
 		align-items: flex-start;
 		justify-content: space-between;
+	}
+	.coluna{
+	flex-basis: 50%;
 	}
 
 	header .linha{
