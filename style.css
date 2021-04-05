@@ -96,6 +96,7 @@ main .coluna section{
 	padding: 10px;
 	border-top: 1px solid var(--cor-borda);
 	margin: 10px 5px;
+	text-align: justify;
 }
 main .coluna section ul li{
 	margin:0 0 5px;
