@@ -154,7 +154,7 @@ main .coluna section ul li a{
 	
 	main .coluna section{
 		padding: 9px;
-		border-top: 1px solid var(--cor-borda);
+		border: 1px solid var(--cor-borda);
 		margin: 10px 5px;
 	}
 	main .container{
