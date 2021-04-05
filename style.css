@@ -40,7 +40,6 @@ header .container{
 header .coluna img{
 	max-width: 30vw;
 	/*border-radius: 10%;*/
-	border-top: 60%;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -130,10 +129,9 @@ main .coluna section ul li a{
 	header .coluna img{
 		max-width: 30vw;
 		/*border-radius: 10%;*/
-		border-top: 60%;
 		display: initial;
-		margin-left: none;
-		margin-right: none;
+		margin-left: initial;
+		margin-right: initial;
 	}
 	header .coluna-direita{
 		flex-basis:70%;
@@ -141,11 +139,6 @@ main .coluna section ul li a{
 	header .coluna-direita section{
 		font-size: var(--font-size-padrão);
 		text-align: left;
-	}
-	header .coluna img{
-		max-width: 20vw;
-		/*border-radius: 10%;*/
-		border-top: 60%;
 	}
 	
 	main .container{
