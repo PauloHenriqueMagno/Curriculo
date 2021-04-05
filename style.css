@@ -1,10 +1,10 @@
 :root {
 	--cor-de-fundo: rgb(81, 16, 143);
+	--cor-de-fundo-secundario: white;
 	--font-size-padrão: 0.8rem;
-	--cor-borda: rgba(82, 16, 143, 0.37);
+	--cor-borda: rgb(169, 88, 245);
 	--container-size: 90vw;
 	--footer-font-color: white;
-	--cor-de-fundo-secundario: white;
 	--font-color: black;
 }
 /*Estilos Gerais*/
@@ -18,7 +18,7 @@ html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li
 
 .container{
 	width: 100%;
-	max-width: var(--container-size));
+	max-width: var(--container-size);
 	margin: 0 auto;
 	padding: 10px;
 }
@@ -32,7 +32,6 @@ html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li
 body{
 	font-family: 'Times New Roman', Arial;
 	font-size: var(--font-size-padrão);
-	background-color: var(--cor-de-fundo-secundario);
 	color: var(--font-color);
 }
 
@@ -41,6 +40,7 @@ header{
 	background-color: var(--cor-de-fundo);
 	padding: 0 5vw;
 	padding-top: 30px;
+	color: var(--font-color);
 }
 header .container{
 	background-color: var(--cor-de-fundo-secundario);
@@ -94,7 +94,11 @@ footer .redes-sociais ul li a img{
 	max-width: 10vw;
 }
 
-/*PÁGINA INCIAL*/
+/*Conteudo Principal*/
+main{
+	background-color: var(--cor-de-fundo-secundario);
+	color: var(--font-color);
+}
 main .container{
 	max-width: var(--container-size);
 }
@@ -117,10 +121,38 @@ main .coluna section ul li a{
 }
 
 /*EXTRA*/
+/*Botão de tema*/
+:root{
+	--none: none;
+	--initial: initial;
+}
+input{
+	display: none;
+}
+label{
+	position: absolute;
+	right: 18%;
+}
+.sun{
+	position: absolute;
+	display: var(--none);
+}
+.moon{
+	position: absolute;
+	display: var(--initial)
+}
+.ativar-dark:checked ~ .dark-mode{
+	--cor-de-fundo-secundario: black;
+	--font-color: white;
+	--initial: none;
+	--none: initial;
+}
 
 /*@MEDIA*/
 @media only screen and (min-width: 768px){
 	/*Para desktop*/
+
+	/*Regras Gerais*/
 	:root{
 		--font-size-padrão: 1.2rem;
 		--container-size: 80vw;
@@ -141,7 +173,7 @@ main .coluna section ul li a{
 		padding: 30px;
 	}
 	
-
+	/*Header*/
 	header .linha{
 		align-items: center;
 	}
@@ -163,6 +195,7 @@ main .coluna section ul li a{
 		text-align: left;
 	}
 	
+	/*Conteudo Principal*/
 	main .coluna section{
 		padding: 9px;
 		border: 1px solid var(--cor-borda);
@@ -171,7 +204,8 @@ main .coluna section ul li a{
 	main .container{
 		max-width: var(--container-size);
 	}
-
+	
+	/*Footer*/
 	footer .redes-sociais ul li a img{
 		max-width: 4vw;
 	}
