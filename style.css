@@ -105,6 +105,9 @@ main .coluna section{
 main .coluna section ul li{
 	margin:0 0 5px;
 }
+main .coluna section ul li h3{
+	font-size: var(--font-size-padrão);
+}
 main .coluna section ul li a{
 	color: black;
 	text-decoration: underline;
