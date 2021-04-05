@@ -87,6 +87,9 @@ footer .redes-sociais ul li a img{
 }
 
 /*PÁGINA INCIAL*/
+main .container{
+	max-width: 98vw;
+}
 main .coluna section{
 	padding: 9px;
 	border: 1px solid var(--cor-borda);
@@ -143,5 +146,14 @@ main .coluna section ul li a{
 		max-width: 20vw;
 		/*border-radius: 10%;*/
 		border-top: 60%;
+	}
+	
+	main .container{
+		max-width: 80vw;
+	}
+	main .coluna section{
+		padding: 9px;
+		border: 1px solid var(--cor-borda);
+		margin: 10px 5px;
 	}
 }
