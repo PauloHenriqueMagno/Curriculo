@@ -107,6 +107,7 @@ main .coluna section ul li{
 }
 main .coluna section ul li h3{
 	font-size: var(--font-size-padrão);
+	text-align: left;
 }
 main .coluna section ul li a{
 	color: black;
