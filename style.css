@@ -3,6 +3,8 @@
 	--font-size-padrão: 0.8rem;
 	--cor-borda: rgba(82, 16, 143, 0.37);
 	--container-size: 90vw;
+	--footer-font-color: white;
+	--cor-de-fundo-secundario: white;
 }
 /*Estilos Gerais*/
 html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li, a, main{
@@ -29,6 +31,7 @@ html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li
 body{
 	font-family: 'Times New Roman', Arial;
 	font-size: var(--font-size-padrão);
+	background-color: var(--cor-de-fundo-secundario);
 }
 
 /*HEADER*/
@@ -38,7 +41,7 @@ header{
 	padding-top: 30px;
 }
 header .container{
-	background-color: white;
+	background-color: var(--cor-de-fundo-secundario);
 }
 header .coluna img{
 	max-width: 30vw;
@@ -64,9 +67,10 @@ header .coluna ul li a{
 /*FOOTER*/
 footer{
 	background-color: var(--cor-de-fundo);
+	color: var(--footer-font-color);
 }
 footer nav ul li a{
-	color:black;
+	color: var(--footer-font-color);
 }
 footer .info-contato ul li{
 	margin: 10px 5vw;
