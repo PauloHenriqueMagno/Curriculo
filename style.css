@@ -2,6 +2,7 @@
 	--cor-de-fundo: rgb(81, 16, 143);
 	--font-size-padrão: 0.8rem;
 	--cor-borda: rgba(82, 16, 143, 0.37);
+	--container-size: 90vw;
 }
 /*Estilos Gerais*/
 html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li, a, main{
@@ -14,10 +15,11 @@ html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li
 
 .container{
 	width: 100%;
-	max-width: 80vw;
+	max-width: var(--container-size));
 	margin: 0 auto;
-	padding: 30px;
+	padding: 10px;
 }
+
 
 .hidden{
 	display: none;
@@ -32,6 +34,7 @@ body{
 /*HEADER*/
 header{
 	background-color: var(--cor-de-fundo);
+	padding: 0 5vw;
 	padding-top: 30px;
 }
 header .container{
@@ -66,7 +69,7 @@ footer nav ul li a{
 	color:black;
 }
 footer .info-contato ul li{
-	margin:0 0 10px;
+	margin: 10px 5vw;
 }
 footer .redes-sociais{
 	border-top: 1px gray solid;
@@ -82,16 +85,16 @@ footer .redes-sociais ul li{
 	text-align: center;
 }
 footer .redes-sociais ul li a img{
-	max-width: 50px;
+	max-width: 10vw;
 }
 
 /*PÁGINA INCIAL*/
 main .container{
-	max-width: 98vw;
+	max-width: var(--container-size);
 }
 main .coluna section{
-	padding: 9px;
-	border: 1px solid var(--cor-borda);
+	padding: 10px;
+	border-top: 1px solid var(--cor-borda);
 	margin: 10px 5px;
 }
 main .coluna section ul li{
@@ -109,6 +112,7 @@ main .coluna section ul li a{
 	/*Para desktop*/
 	:root{
 		--font-size-padrão: 1.2rem;
+		--container-size: 80vw;
 	}
 	.linha{
 		display: flex;
@@ -117,8 +121,15 @@ main .coluna section ul li a{
 		justify-content: space-between;
 	}
 	.coluna{
-	flex-basis: 50%;
+		flex-basis: 50%;
 	}
+	.container{
+		width: 100%;
+		max-width: var(--container-size);
+		margin: 0 auto;
+		padding: 30px;
+	}
+	
 
 	header .linha{
 		align-items: center;
@@ -141,12 +152,16 @@ main .coluna section ul li a{
 		text-align: left;
 	}
 	
-	main .container{
-		max-width: 80vw;
-	}
 	main .coluna section{
 		padding: 9px;
 		border: 1px solid var(--cor-borda);
 		margin: 10px 5px;
+	}
+	main .container{
+		max-width: var(--container-size);
+	}
+
+	footer .redes-sociais ul li a img{
+		max-width: 4vw;
 	}
 }
