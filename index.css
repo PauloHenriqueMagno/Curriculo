@@ -1,0 +1,148 @@
+:root {
+	--cor-de-fundo: rgb(81, 16, 143);
+	--font-size-padrão: 0.8rem;
+	--cor-borda: rgba(82, 16, 143, 0.37);
+}
+/*Estilos Gerais*/
+html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li, a, main{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+}
+
+.container{
+	width: 100%;
+	max-width: 80vw;
+	margin: 0 auto;
+	padding: 30px;
+}
+
+.coluna{
+	flex-basis: 49%;
+}
+
+.hidden{
+	display: none;
+}
+
+/*BODY*/
+body{
+	font-family: 'Times New Roman', Arial;
+	font-size: var(--font-size-padrão);
+}
+
+/*HEADER*/
+header{
+	background-color: var(--cor-de-fundo);
+	padding-top: 30px;
+}
+header .container{
+	background-color: white;
+}
+header .coluna img{
+	max-width: 30vw;
+	/*border-radius: 10%;*/
+	border-top: 60%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+header .coluna-direita section{
+	font-size: var(--font-size-padrão);
+	text-align: center;
+}
+header .coluna ul{
+	margin: 20px 0 0;
+}
+header .coluna ul li{
+	margin: 0 0 14px;
+}
+header .coluna ul li a{
+	color: black;
+}
+
+/*FOOTER*/
+footer{
+	background-color: var(--cor-de-fundo);
+}
+footer nav ul li a{
+	color:black;
+}
+footer .info-contato ul li{
+	margin:0 0 10px;
+}
+footer .redes-sociais{
+	border-top: 1px gray solid;
+	margin: 20px;
+	padding: 10px;
+}
+footer .redes-sociais ul{
+	display: flex;
+	justify-content: center;
+}
+footer .redes-sociais ul li{
+	margin: 8px 15px;
+	text-align: center;
+}
+footer .redes-sociais ul li a img{
+	max-width: 50px;
+}
+
+/*PÁGINA INCIAL*/
+main .coluna section{
+	padding: 9px;
+	border: 1px solid var(--cor-borda);
+	margin: 10px 5px;
+}
+main .coluna section ul li{
+	margin:0 0 5px;
+}
+main .coluna section ul li a{
+	color: black;
+	text-decoration: underline;
+}
+
+/*EXTRA*/
+
+/*@MEDIA*/
+@media only screen and (min-width: 768px){
+	/*Para desktop*/
+	:root{
+		--font-size-padrão: 1.2rem;
+	}
+	.linha{
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+
+	header .linha{
+		align-items: center;
+	}
+	header .coluna-esquerda{
+		flex-basis:30%;
+	}
+	header .coluna img{
+		max-width: 30vw;
+		/*border-radius: 10%;*/
+		border-top: 60%;
+		display: initial;
+		margin-left: none;
+		margin-right: none;
+	}
+	header .coluna-direita{
+		flex-basis:70%;
+	}
+	header .coluna-direita section{
+		font-size: var(--font-size-padrão);
+		text-align: left;
+	}
+	header .coluna img{
+		max-width: 20vw;
+		/*border-radius: 10%;*/
+		border-top: 60%;
+	}
+}
