@@ -2,7 +2,9 @@
 	--header-color: rgb(81, 16, 143);
 	--background-color: rgb(255, 255, 255);
 	--font-size: 1em;
-	--font-size-mobile: 0.7em;
+	--font-size-mobile: 0.5em;
+	--hx: 1.5em;
+	--hx-mobile: 0.7em;
 }
 
 html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li, a, main{
@@ -17,6 +19,9 @@ body{
 	background-color: var(--background-color);
 	font-size: 18px;
 	font-family: "Times New Roman", "Arial";
+}
+h1, h2{
+	font-size: var(--hx-mobile);
 }
 
 .header{
@@ -66,5 +71,8 @@ footer{
 	}
 	.all ul li{
 		font-size: var(--font-size);
+	}
+	h1, h2{
+		font-size: var(--hx)
 	}
 }
