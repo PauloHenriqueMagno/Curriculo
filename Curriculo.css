@@ -34,7 +34,6 @@ body{
 
 .all{
 	margin: auto;
-	width: 80vw;
 	border: 1px solid black;
 	padding: 0px 0px;
 	background-color: #578700;
@@ -52,4 +51,10 @@ footer{
 	background-color: var(--header-color);
 	height: 30px;
 	margin: 15px 0 0 0
+}
+
+@media only screen and (min-width: 768px){
+	.all{
+		width: 80vw;
+	}
 }
