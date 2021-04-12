@@ -37,7 +37,7 @@ body{
 	background-color: #578700;
 }
 .all section{
-	padding: 10px 0px 15px 10px;
+	padding: 10px 5px 15px 10px;
 	border-top: 1px solid black;
 }
 .all .contato a{
@@ -65,7 +65,7 @@ footer{
 		width: 80vw;
 	}
 	.all section{
-	padding: 10px 0px 15px 30px;
+	padding-left: 30px;
 	}
 	.all section ul li{
 		font-size: var(--font-size);
