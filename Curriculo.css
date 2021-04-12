@@ -70,7 +70,7 @@ footer{
 	.all section ul li{
 		font-size: var(--font-size);
 	}
-	section p{
+	.all section p{
 		font-size: var(--font-size);
 	}
 	.all .header h1, h2{
