@@ -1,10 +1,10 @@
 :root{
 	--header-color: rgb(81, 16, 143);
 	--background-color: rgb(255, 255, 255);
-	--font-size: 1em;
-	--font-size-mobile: 0.5em;
-	--hx: 1.5em;
-	--hx-mobile: 0.7em;
+	--font-size: 20px;
+	--font-size-mobile: 20px;
+	--hx: 30px;
+	--hx-mobile: 20px;
 }
 
 html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li, a, main{
@@ -20,24 +20,14 @@ body{
 	font-size: 18px;
 	font-family: "Times New Roman", "Arial";
 }
-h1, h2{
+.all .header h1, h2{
 	font-size: var(--hx-mobile);
 }
 
 .header{
 	background-color: var(--header-color);
-	border-bottom: 1px solid black;
 	padding: 20px;
 	text-align: center;
-}
-
-.contato a{
-	color: rgb(0,0,0);
-}
-
-.objetivo p{
-	margin: 10px 0 0 15px;
-	font-size: var(--font-size-mobile);
 }
 
 .all{
@@ -46,14 +36,22 @@ h1, h2{
 	padding: 0px 0px;
 	background-color: #578700;
 }
-.all h2{
-	margin: 5px 15px
+.all section{
+	padding: 10px 0 15px 30px;
+	border-top: 1px solid black;
 }
-.all hr{
-	color: black;
+.all .contato a{
+	color: rgb(0,0,0);
 }
-.all ul li{
-	padding: 7px 15px;
+.all section p{
+	font-size: var(--font-size-mobile);
+}
+
+.all section h2{
+	margin: 5px 0px;
+}
+.all section ul li{
+	padding: 7px 0px;
 	font-size: var(--font-size-mobile);
 }
 footer{
@@ -66,13 +64,13 @@ footer{
 	.all{
 		width: 80vw;
 	}
-	.objetivo p{
+	.all section ul li{
 		font-size: var(--font-size);
 	}
-	.all ul li{
+	section p{
 		font-size: var(--font-size);
 	}
-	h1, h2{
-		font-size: var(--hx)
+	.all .header h1, h2{
+		font-size: var(--hx);
 	}
 }
