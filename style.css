@@ -44,6 +44,7 @@ header{
 }
 header .container{
 	background-color: var(--cor-de-fundo-secundario);
+	position: relative;
 }
 header .coluna img{
 	max-width: 30vw;
@@ -128,34 +129,46 @@ main .coluna section ul li a{
 
 /*EXTRA*/
 
-/*Botão de tema*/
-:root{
-	--none: none;
-	--initial: initial;
-}
-input{
-	display: none;
-}
-label{
-	position: absolute;
-	right: 25%;
-}
-.sun{
-	position: absolute;
-	display: var(--none);
-}
-.moon{
-	position: absolute;
-	display: var(--initial)
-}
-.ativar-dark:checked ~ .dark-mode{
-	--cor-de-fundo-secundario: black;
-	--font-color: white;
-	--initial: none;
-	--none: initial;
-}
+	/*Botão de tema*/
+	:root{
+		--bolinha: rgb(255, 0, 0);
+		--position-ball: 23px;
+	}
+	input{
+		display: none;
+	}
+	label{
+		background: var(--cor-de-fundo);
+		height: 20px;
+		width: 40px;
+		border-radius: 50px;	
+		position: absolute;
+		right: 50px;
+		top: 10px;
+		box-sizing: border-box;
+		cursor: pointer;
+	}
+	label span{
+		display: block;
+		background: var(--bolinha);
+		height: 13px;
+		width: 13px;
+		border-radius: 100%;
+		position: absolute;
+		right: var(--position-ball);
+		top: 4px;
+	}
+
+	/*Dark Mode*/
+		.ativar-dark:checked ~ .dark-mode{
+			--cor-de-fundo-secundario: black;
+			--font-color: white;
+			--bolinha: rgb(255, 255, 0);
+			--position-ball: 5px;
+		}
 
 /*@MEDIA*/
+
 @media only screen and (min-width: 768px){
 	/*Para desktop*/
 
@@ -181,6 +194,9 @@ label{
 	}
 	
 	/*Header*/
+	header .container{
+		position: relative;
+	}
 	header .linha{
 		align-items: center;
 	}
@@ -217,9 +233,4 @@ label{
 		max-width: 4vw;
 	}
 	
-	/*EXTRAS*/
-	label{
-		position: absolute;
-		right: 18%;
-	}
 }
