@@ -132,7 +132,6 @@ main .coluna section ul li a{
 	/*Botão de tema*/
 	:root{
 		--bolinha: rgb(255, 0, 0);
-		--position-ball: 4px;
 	}
 	input{
 		display: none;
@@ -157,7 +156,7 @@ main .coluna section ul li a{
 		position: absolute;
 		top: 4px;
 		transition: 2s;
-		margin-left: var(--position-ball);
+		margin-left: 4px;
 	}
 
 	/*Dark Mode*/
@@ -166,6 +165,9 @@ main .coluna section ul li a{
 			--font-color: white;
 			--bolinha: rgb(255, 255, 0);
 			--position-ball: 23px;
+		}
+		.ativar-dark:checked ~ .dark-mode label span{
+			transform: translateX(19px);
 		}
 
 /*@MEDIA*/
