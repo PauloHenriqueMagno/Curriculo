@@ -132,7 +132,7 @@ main .coluna section ul li a{
 	/*Botão de tema*/
 	:root{
 		--bolinha: rgb(255, 0, 0);
-		--position-ball: 23px;
+		--position-ball: 4px;
 	}
 	input{
 		display: none;
@@ -143,7 +143,7 @@ main .coluna section ul li a{
 		width: 40px;
 		border-radius: 50px;	
 		position: absolute;
-		right: 30px;
+		right: 20px;
 		top: 10px;
 		box-sizing: border-box;
 		cursor: pointer;
@@ -155,8 +155,9 @@ main .coluna section ul li a{
 		width: 13px;
 		border-radius: 100%;
 		position: absolute;
-		right: var(--position-ball);
 		top: 4px;
+		transition: 2s;
+		margin-left: var(--position-ball);
 	}
 
 	/*Dark Mode*/
@@ -164,7 +165,7 @@ main .coluna section ul li a{
 			--cor-de-fundo-secundario: black;
 			--font-color: white;
 			--bolinha: rgb(255, 255, 0);
-			--position-ball: 5px;
+			--position-ball: 23px;
 		}
 
 /*@MEDIA*/
@@ -235,7 +236,7 @@ main .coluna section ul li a{
 	
 	/*Botão Tema*/
 	label{
-		right: 50px;
+		right: 20px;
+		top: 15px;
 	}
-	
 }
