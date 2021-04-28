@@ -19,7 +19,7 @@ body {
 	text-align: left;
 }
 
-
+/*Cabeçalho*/
 .cabecalho { 
 	background: purple;
 	font-size: 18px;
@@ -27,7 +27,7 @@ body {
 	padding: 20px;
 }
 
-
+/*Menu*/
 .menu {
 	background: purple;
 	height: 40px;
@@ -57,17 +57,25 @@ body {
 	text-decoration: none;
 }
 
+/*Content*/
+.content{
+	width: 99.5%;
+	height: 32.5vw;
+	border: none;
+}
 
 .conteudo {
 	clear: both;
 	font-size: 18px;
 	padding: 5px;
 	text-align: justify;
+	background: white;
 }
 h2 {
 	text-align: center;
 }
 
+/*Rodape*/
 .rodape {
 	clear: both;
 	background: purple;
