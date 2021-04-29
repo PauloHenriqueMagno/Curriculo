@@ -108,7 +108,6 @@ main .coluna section{
 	border-top: 1px solid var(--cor-borda);
 	margin: 10px 5px;
 	text-align: justify;
-	border-radius: 10px;
 }
 main .coluna section p{
 	margin: 8px 0 0 0;
@@ -228,6 +227,7 @@ main .coluna section ul li a{
 		padding: 9px;
 		border: 1px solid var(--cor-borda);
 		margin: 10px 5px;
+		border-radius: 10px;
 	}
 	main .container{
 		max-width: var(--container-size);
