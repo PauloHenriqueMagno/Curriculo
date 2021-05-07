@@ -47,11 +47,8 @@ header .container{
 	position: relative;
 }
 header .coluna img{
-	max-width: 30vw;
-	/*border-radius: 10%;*/
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	width: 20vw;
+	height: 25.5vw;
 }
 header .coluna-direita section{
 	font-size: var(--font-size-padrão);
@@ -92,7 +89,8 @@ footer .redes-sociais ul li{
 	text-align: center;
 }
 footer .redes-sociais ul li a img{
-	max-width: 10vw;
+	width: 10vw;
+	height: 10vw
 }
 
 /*Conteudo Principal*/
@@ -235,7 +233,8 @@ main .coluna section ul li a{
 	
 	/*Footer*/
 	footer .redes-sociais ul li a img{
-		max-width: 4vw;
+		width: 4vw;
+		height: 4vw;
 	}
 	
 	/*Botão Tema*/
