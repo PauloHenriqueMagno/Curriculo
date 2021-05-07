@@ -49,6 +49,8 @@ header .container{
 header .coluna img{
 	width: 20vw;
 	height: 25.5vw;
+	display: block;
+	margin: auto;
 }
 header .coluna-direita section{
 	font-size: var(--font-size-padrão);
@@ -91,7 +93,6 @@ footer .redes-sociais ul li{
 footer .redes-sociais ul li a img{
 	width: 10vw;
 	height: 10vw;
-	margin: auto;
 }
 
 /*Conteudo Principal*/
