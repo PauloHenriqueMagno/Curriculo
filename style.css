@@ -90,7 +90,8 @@ footer .redes-sociais ul li{
 }
 footer .redes-sociais ul li a img{
 	width: 10vw;
-	height: 10vw
+	height: 10vw;
+	margin: auto;
 }
 
 /*Conteudo Principal*/
