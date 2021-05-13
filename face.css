@@ -36,7 +36,8 @@ header{
 }
 
 .user{
-    margin: 16.3vw 59% 0 41%;
+    top: 16.3vw;
+    left: 28.49vw;
     position: absolute;
 
 }
@@ -129,23 +130,25 @@ hr{
 }
 
 .header-menu{
+    position: absolute;
+    display: inline;
+    width: 61vw;
+}
+.header-menu ul li {
     display: inline;
 }
-ul li {
-    display: inline;
-}
-ul li button a{
+.header-menu ul li button a{
     color: black;
 
 }
 
 .left li label, .left li #Mais{
-    padding: 1.3vw;
+    padding: 1.3vw 1vw 1.3vw 1vw;
+    color: black;
     border-style: none;
     font-size: 1vw;
     font-weight: 600;
     background-color: white;
-    border-radius: 0;
 }
 .left li label:hover, .left li #Mais:hover{
     border-radius: 0.5vw;
@@ -156,7 +159,8 @@ ul li button a{
 }
 #Publica[type=radio]:checked +label, #Publica[type=button]:checked:hover, 
 #Sobre[type=radio]:checked +label, #Sobre[type=button]:checked:hover, 
-#Amigos[type=radio]:checked +label, #Amigos[type=button]:checked:hover{
+#Amigos[type=radio]:checked +label, #Amigos[type=button]:checked:hover,
+#Fotos[type=radio]:checked +label, #Fotos[type=button]:checked:hover{   
     color: rgb(77, 77, 255);
     border-radius: 0;
     padding-bottom: 1.4vw;
@@ -172,7 +176,7 @@ ul li button a{
     border-radius: 0.5vw;
     height: 2.7vw;
     padding: 0.4vw 1vw 0.5vw 1vw;
-    margin: 0.5vw 0 0 0.5vw;
+    margin: 0.5vw 0 0 0.3vw;
     background-color: rgb(221, 221, 221);
 }
 .right li button:hover{
@@ -200,31 +204,36 @@ ul li button a{
 .mais{
     position: absolute;
     display: none;
-    top: 5.3vw;
-    left: 42.48vw;
+    top: -30.5vw;
+    left: 26.55vw;
     background-color: white;
     width: 25vw;
     height: 30vw;
-    overflow: scroll;
+    overflow-y: scroll;
     overflow-x: hidden;
-    border-radius: 10px;
+    border-radius: 0.3vw;
+    border: white solid;
     box-shadow: 1px 1px 15px 5px rgba(0, 0, 0, 0.192);
+    padding: 0.5vw;
 }
+.mais::-moz-progress-bar{
+    width: 10vw;
+    background-color: black;
+}
+
 #Mais[type=button]:focus +.mais{
     display: block;
-}
-.mais ::-webkit-scrollbar{
-    background: rgb(0,0,0,0);
 }
 
 .mais button{
     border-style: none;
     display: block;
-    width: 30vw;
-    padding: 1vw 15vw 1vw 1vw;
+    width: 25vw;
+    padding: 1vw 1vw 1vw 1vw;
+    border-radius: 0.5vw;
     text-align: left;
     background-color: white;
 }
 .mais button:hover{
-    background-color: rgb(184, 184, 184);
+    background-color: rgba(219, 219, 219, 0.300);
 }
