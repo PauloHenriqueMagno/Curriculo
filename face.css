@@ -123,6 +123,10 @@ header{
     color: rgb(75, 75, 255);
     text-decoration: none;
 }
+.biografia a:hover{
+    text-decoration: underline;
+    
+}
 
 hr{
     margin-bottom: 0.4vw;
@@ -215,10 +219,6 @@ hr{
     border: white solid;
     box-shadow: 1px 1px 15px 5px rgba(0, 0, 0, 0.192);
     padding: 0.5vw;
-}
-.mais::-moz-progress-bar{
-    width: 10vw;
-    background-color: black;
 }
 
 #Mais[type=button]:focus +.mais{
