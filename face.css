@@ -6,7 +6,7 @@ html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li
 	text-decoration: none;
 }
 body{
-    background-color:  rgb(161, 161, 161);
+    background-color:  white;
     color: black;
 }
 .hidden{
@@ -15,15 +15,12 @@ body{
 
 /*Header*/
 header{
-    width: auto;
-    height: 40vw;
-    background-color: white;
-    align-items: center;
+    position: relative;
 }
 
 .container{
     margin: auto;
-    width: 61vw;
+    width: 62vw;
 }
 
 .background-header{
@@ -72,7 +69,7 @@ header{
     color:black
 }
 .change-picture{
-    width: 14vw;
+    width: 15vw;
     height: 3vw;
     margin: 23vw 0 0 53vw;
     position: absolute;
@@ -88,20 +85,22 @@ header{
     position: absolute;
     top: 0.5vw;
     left: 1vw;
-    width: 2vw;
+    width: 1.7vw;
 }
 .change-picture span{
     position: absolute;
-    width: 10vw;
-    top: 0.8vw;
-    left: 2.8vw;
-    font-family: 'Open Sans';
+    width: 11vw;
+    top: 0.6vw;
+    left: 3vw;
+    font-family: 'Segoe UI';
+    font-size: 1.2vw;
     font-weight: 600; 
 }
 
 .name{
     display: flex;
     align-items: center;
+    font-family: "Open Sans";
     justify-content: center;
     margin: 1.5vw 0 0.6vw 0;
 }
@@ -129,19 +128,20 @@ header{
 }
 
 hr{
-    margin-bottom: 0.4vw;
-    color:white;
+    color:rgba(207, 207, 207, 0.432);
+    font-size: 1px;
 }
-
-.header-menu{
-    position: absolute;
+.menu{
+    display: inline-block;
+    width: 62vw;
+    margin: 0vw;
+    padding: 0vw 0vw 0.15vw 0vw;
+    background-color: white;
+}
+.menu ul li {
     display: inline;
-    width: 61vw;
 }
-.header-menu ul li {
-    display: inline;
-}
-.header-menu ul li button a{
+.menu ul li button a{
     color: black;
 
 }
@@ -179,6 +179,7 @@ hr{
     border-style: none;
     border-radius: 0.5vw;
     height: 2.7vw;
+    font-size: 1vw;
     padding: 0.4vw 1vw 0.5vw 1vw;
     margin: 0.5vw 0 0 0.3vw;
     background-color: rgb(221, 221, 221);
@@ -225,15 +226,20 @@ hr{
     display: block;
 }
 
-.mais button{
+#mais{
     border-style: none;
     display: block;
-    width: 25vw;
-    padding: 1vw 1vw 1vw 1vw;
     border-radius: 0.5vw;
     text-align: left;
     background-color: white;
 }
-.mais button:hover{
+#mais:hover{
     background-color: rgba(219, 219, 219, 0.300);
+}
+main{
+    background-color:rgb(161, 161, 161);
+    height: 20vw;
+}
+@media only screen and (min-width: 768px){
+    
 }
