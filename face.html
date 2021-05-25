@@ -2,8 +2,10 @@
 <html lang="pt-br">
     <head>
         <meta charset="utf-8">
+        <meta name="autor" content="Paulo Henrique Magno">
         <link rel="stylesheet" type="text/css" href="face.css">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="code.js"></script>
     </head>
     <body>
        <div class="all">
@@ -24,7 +26,10 @@
                 <div class="container">
 
                 <div class="name">
-                <h1><strong>Paulo Henrique Magno</strong></h1>
+                <h1><strong id="nome">
+                    <script>document.getElementById("nome").innerHTML = name;</script>
+                </strong></h1>
+
                 </div>
                 <div class="biografia">
                 <p><a href="face.html">Adicionar biografia</a></p>
