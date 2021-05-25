@@ -6,7 +6,7 @@ html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li
 	text-decoration: none;
 }
 body{
-    background-color:  white;
+    background-color: gray;
     color: black;
 }
 .hidden{
@@ -16,6 +16,8 @@ body{
 /*Header*/
 header{
     position: relative;
+    background-color:  white;
+    height: auto;
 }
 
 .container{
@@ -133,25 +135,34 @@ hr{
 }
 .menu{
     display: inline-block;
+    margin: auto;
     width: 62vw;
-    margin: 0vw;
-    padding: 0vw 0vw 0.15vw 0vw;
+    padding: 0vw;
     background-color: white;
+    bottom: 0vw;
 }
 .menu ul li {
     display: inline;
 }
-.menu ul li button a{
+.menu ul li button a, .menu ul li label{
     color: black;
 
 }
 
-.left li label, .left li #Mais{
+.left li label{
     padding: 1.3vw 1vw 1.3vw 1vw;
     color: black;
     border-style: none;
     font-size: 1vw;
-    font-weight: 600;
+    font-weight: 700;
+    background-color: white;
+}
+.left li #Mais{
+    padding: 1.2vw 1vw 1.3vw 1vw;
+    color: black;
+    border-style: none;
+    font-size: 1vw;
+    font-weight: 700;
     background-color: white;
 }
 .left li label:hover, .left li #Mais:hover{
@@ -167,7 +178,7 @@ hr{
 #Fotos[type=radio]:checked +label, #Fotos[type=button]:checked:hover{   
     color: rgb(77, 77, 255);
     border-radius: 0;
-    padding-bottom: 1.4vw;
+    padding-bottom: 1.3vw;
     border-bottom: 0.3vw solid rgb(77, 77, 255);
     background-color: white;
 }
@@ -206,12 +217,21 @@ hr{
     background-color: blue;
 }
 
+#Mais[type=button]:focus +.mais{
+    display: block;
+}
+#Mais:hover{
+    background-color: rgba(219, 219, 219, 0.300);
+}
+
 .mais{
+    border-style: none;
+    text-align: left;
+    background-color: white;
     position: absolute;
     display: none;
-    top: -30.5vw;
-    left: 26.55vw;
-    background-color: white;
+    top: 4.6vw;
+    left: 41vw;
     width: 25vw;
     height: 30vw;
     overflow-y: scroll;
@@ -221,20 +241,20 @@ hr{
     box-shadow: 1px 1px 15px 5px rgba(0, 0, 0, 0.192);
     padding: 0.5vw;
 }
-
-#Mais[type=button]:focus +.mais{
+.mais ul li{
     display: block;
 }
-
-#mais{
+.mais ul li button{
     border-style: none;
     display: block;
+    width: 25vw;
+    padding: 1vw 1vw 1vw 1vw;
     border-radius: 0.5vw;
     text-align: left;
     background-color: white;
 }
-#mais:hover{
-    background-color: rgba(219, 219, 219, 0.300);
+.mais button:hover{
+        background-color: rgba(219, 219, 219, 0.300);
 }
 main{
     background-color:rgb(161, 161, 161);
