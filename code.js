@@ -1,1 +1,1 @@
-var name = prompt("Qual seu nome?");
+var name = Paulo Henrique Magno;
