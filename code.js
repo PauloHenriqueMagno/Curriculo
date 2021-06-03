@@ -1,1 +1,1 @@
-var name = Paulo Henrique Magno;
+var name = "Paulo Henrique Magno";
