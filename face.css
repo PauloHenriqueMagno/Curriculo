@@ -91,11 +91,11 @@ header{
 }
 .change-picture span{
     position: absolute;
-    width: 11vw;
-    top: 0.6vw;
-    left: 3vw;
+    width: 15vw;
+    top: 0.8vw;
+    left: 1.5vw;
     font-family: 'Segoe UI';
-    font-size: 1.2vw;
+    font-size: 1vw;
     font-weight: 600; 
 }
 
