@@ -17,7 +17,7 @@ body{
 header{
     position: relative;
     background-color:  white;
-    height: auto;
+    height: 79.2vh;
 }
 
 .container{
@@ -28,14 +28,14 @@ header{
 .background-header{
     margin: auto;
     width: 69vw;
-    height: 27.3vw;
+    height: 55.3vh;
     background-color: rgb(40, 43, 255);
     position: relative;
     border-radius: 0 0 1vw 1vw;
 }
 
 .user{
-    top: 16.3vw;
+    top: 33.3vh;
     left: 28.49vw;
     position: absolute;
 
@@ -53,7 +53,7 @@ header{
 }
 .camera{
     position: absolute;
-    margin: 24.9vw 0 0 37vw;
+    margin: 50.9vh 0 0 37vw;
     border-style: none;
     width: 3vw;
     height: 3vw;
@@ -62,9 +62,9 @@ header{
 }
 .camera img{
     background-color: rgb(0,0,0,0);
-    margin: auto;
-    width: 1.7vw;
-    height: 1.7vw;
+    margin: 0;
+    max-width: 1.7vw;
+    max-height: 1.7vw;
     border-style: none;
 }
 .change-picture a{
@@ -72,8 +72,9 @@ header{
 }
 .change-picture{
     width: 15vw;
-    height: 3vw;
-    margin: 23vw 0 0 53vw;
+    height: 5.9vh;
+    top: 47vh;
+    left: 53vw;
     position: absolute;
     background: white;
     font-size: 1vw;
@@ -85,14 +86,14 @@ header{
 }
 .change-picture img{
     position: absolute;
-    top: 0.5vw;
+    top: 1vh;
     left: 1vw;
     width: 1.7vw;
 }
 .change-picture span{
     position: absolute;
     width: 15vw;
-    top: 0.8vw;
+    top: 1.7vh;
     left: 1.5vw;
     font-family: 'Segoe UI';
     font-size: 1vw;
@@ -104,22 +105,22 @@ header{
     align-items: center;
     font-family: "Open Sans";
     justify-content: center;
-    margin: 1.5vw 0 0.6vw 0;
+    margin: 3.5vh 0 0.6vw 0;
 }
 .biografia{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 0.5vw
+    padding-bottom: 0.1vh
 }
 .name h1{
-    font-size: 3vw;
+    font-size: 6vh;
     font-family: 'Open Sans';
     line-height: 3.35vw;
 }
 
 .biografia a{
-    font-size: 1vw;
+    font-size: 2vh;
     font-weight: 700;
     color: rgb(75, 75, 255);
     text-decoration: none;
@@ -135,11 +136,10 @@ hr{
 }
 .menu{
     display: inline-block;
-    margin: auto;
     width: 62vw;
     padding: 0vw;
     background-color: white;
-    bottom: 0vw;
+    bottom: 0vh;
 }
 .menu ul li {
     display: inline;
@@ -153,7 +153,7 @@ hr{
     padding: 1.3vw 1vw 1.3vw 1vw;
     color: black;
     border-style: none;
-    font-size: 1vw;
+    font-size: 2vh;
     font-weight: 700;
     background-color: white;
 }
@@ -161,7 +161,7 @@ hr{
     padding: 1.2vw 1vw 1.3vw 1vw;
     color: black;
     border-style: none;
-    font-size: 1vw;
+    font-size: 2.25vh;
     font-weight: 700;
     background-color: white;
 }

@@ -1,7 +1,7 @@
 :root {
 	--cor-de-fundo: rgb(81, 16, 143);
 	--cor-de-fundo-secundario: white;
-	--font-size-padrão: 0.8rem;
+	--font-size-padrão: 3vh;
 	--cor-borda: rgb(169, 88, 245);
 	--container-size: 90vw;
 	--footer-font-color: white;
@@ -20,7 +20,7 @@ html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li
 	width: 100%;
 	max-width: var(--container-size);
 	margin: 0 auto;
-	padding: 10px;
+	padding: 5vw;
 }
 
 
@@ -39,7 +39,7 @@ body{
 header{
 	background-color: var(--cor-de-fundo);
 	padding: 0 5vw;
-	padding-top: 30px;
+	padding-top: 3vh;
 	color: var(--font-color);
 }
 header .container{
@@ -57,10 +57,10 @@ header .coluna-direita section{
 	text-align: center;
 }
 header .coluna ul{
-	margin: 20px 0 0;
+	margin: 2vh 0 0;
 }
 header .coluna ul li{
-	margin: 0 0 14px;
+	margin: 0 0 2vh;
 }
 header .coluna ul li a{
 	color: var(--font-color);
@@ -75,11 +75,11 @@ footer nav ul li a{
 	color: var(--footer-font-color);
 }
 footer .info-contato ul li{
-	margin: 10px 5vw;
+	margin: 1vh 5vw;
 }
 footer .redes-sociais{
 	border-top: 1px gray solid;
-	margin: 20px;
+	margin-top: 3vh;
 	padding: 10px;
 }
 footer .redes-sociais ul{
@@ -87,7 +87,7 @@ footer .redes-sociais ul{
 	justify-content: center;
 }
 footer .redes-sociais ul li{
-	margin: 8px 25px;
+	margin: 2vh 2.5vw;
 	text-align: center;
 }
 footer .redes-sociais ul li a img{
@@ -138,25 +138,25 @@ main .coluna section ul li a{
 	}
 	label{
 		background: var(--cor-de-fundo);
-		height: 20px;
-		width: 40px;
-		border-radius: 50px;	
+		height: 3vw;
+		width: 5.9vw;
+		border-radius: 20vw;	
 		position: absolute;
-		right: 20px;
-		top: 10px;
+		right: 2vw;
+		top: 2vh;
 		box-sizing: border-box;
 		cursor: pointer;
 	}
 	label span{
 		display: block;
 		background: var(--bolinha);
-		height: 13px;
-		width: 13px;
+		height: 2vw;
+		width: 2vw;
 		border-radius: 100%;
 		position: absolute;
-		top: 4px;
+		top: 0.48vh;
 		transition: all ease 0.3s;
-		margin-left: 4px;
+		margin-left: 0.6vw;
 	}
 
 	/*Dark Mode*/
@@ -164,10 +164,9 @@ main .coluna section ul li a{
 			--cor-de-fundo-secundario: black;
 			--font-color: white;
 			--bolinha: rgb(255, 255, 0);
-			--position-ball: 23px;
 		}
 		.ativar-dark:checked ~ .dark-mode label span{
-			transform: translateX(19px);
+			transform: translateX(2.8vw);
 			transition: all ease 0.3s;
 		}
 
@@ -178,7 +177,7 @@ main .coluna section ul li a{
 
 	/*Regras Gerais*/
 	:root{
-		--font-size-padrão: 1.2rem;
+		--font-size-padrão: 3vh;
 		--container-size: 80vw;
 	}
 	.linha{
@@ -241,7 +240,16 @@ main .coluna section ul li a{
 	
 	/*Botão Tema*/
 	label{
-		right: 20px;
-		top: 15px;
+		right: 2vw;
+		top: 3vh;
+	}
+	label span{
+		height: 2vw;
+		width: 2vw;
+		border-radius: 100%;
+		position: absolute;
+		top: 1vh;
+		transition: all ease 0.3s;
+		margin-left: 0.6vw;
 	}
 }
