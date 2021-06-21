@@ -1,7 +1,7 @@
 body {
 	background-image: url("../image/delivery_background.png");
 	background-repeat: repeat;
-	background-size: 12.1vw 8vw;
+	background-size: 26vh 16vh;
 	color: #000;
 	font-size: 3vw;
 	font-family: "Times New Roman", Arial;
@@ -31,7 +31,7 @@ body {
 /*Menu*/
 .menu {
 	background: purple;
-	height: 6vh;
+	height: 6vw;
 	margin: 0px; 
 	padding: 0px;
 }
@@ -75,11 +75,12 @@ h2 {
 	text-align: center;
 }
 .conteudo ol{
-	padding-left: 9vw;
+	padding-left: 10vw;
 }
 .conteudo ol li{
 	margin-bottom: 2vh;
 }
+
 @media only screen and (min-width: 768px){
 	body{
 		background-size: 2.42vw 1.6vw;
@@ -99,10 +100,5 @@ h2 {
 	}
 	.conteudo ol{
 		padding-left: 6vw;
-	}
-}
-@media only screen and (max-height: 526px){
-	.menu{
-		height: 5vw;
 	}
 }
