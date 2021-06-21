@@ -1,4 +1,4 @@
-html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li, a, main{
+html, body, header, section, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li, hr, a, main{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -17,7 +17,7 @@ body{
 header{
     position: relative;
     background-color:  white;
-    height: 79.2vh;
+    height: 78vh;
 }
 
 .container{
@@ -28,19 +28,21 @@ header{
 .background-header{
     margin: auto;
     width: 69vw;
-    height: 55.3vh;
+    height: 25vh;
     background-color: rgb(40, 43, 255);
     position: relative;
     border-radius: 0 0 1vw 1vw;
 }
 
 .user{
-    top: 33.3vh;
+    top: 18.4vh;
     left: 28.49vw;
     position: absolute;
 
 }
 .user img{
+    max-width: 12vw;
+    max-height: 12vw;
     width: 12vw;
     height: 12vw;
     border-radius: 100%;
@@ -48,24 +50,29 @@ header{
     border: 0.4vw black solid;
     align-content: center;
     display: block;
-    margin:auto;
     filter: invert(100%);
 }
 .camera{
     position: absolute;
-    margin: 50.9vh 0 0 37vw;
+    top: 23.6vh;
+    left: 37.9vw;
     border-style: none;
     width: 3vw;
     height: 3vw;
+    max-width: 3vw;
+    max-height: 3vw;
     background-color: gray;
     border-radius: 100%;
 }
 .camera img{
     background-color: rgb(0,0,0,0);
-    margin: 0;
+    margin: 0px;
     max-width: 1.7vw;
     max-height: 1.7vw;
+    width: 1.7vw;
+    height: 1.7vw;
     border-style: none;
+    padding: 0px;
 }
 .change-picture a{
     color:black
@@ -132,11 +139,13 @@ header{
 
 hr{
     color:rgba(207, 207, 207, 0.432);
-    font-size: 1px;
+    font-size: 0.1vw;
 }
 .menu{
     display: inline-block;
+    max-width: 62vw;
     width: 62vw;
+    max-height: 8vh;
     padding: 0vw;
     background-color: white;
     bottom: 0vh;
@@ -151,6 +160,8 @@ hr{
 
 .left li label{
     padding: 1.3vw 1vw 1.3vw 1vw;
+    max-width: 2.6vw;
+    max-height: 2vw;
     color: black;
     border-style: none;
     font-size: 2vh;
@@ -159,6 +170,7 @@ hr{
 }
 .left li #Mais{
     padding: 1.2vw 1vw 1.3vw 1vw;
+    max-width: 4.5vw;
     color: black;
     border-style: none;
     font-size: 2.25vh;
@@ -189,9 +201,10 @@ hr{
 .right li button{
     border-style: none;
     border-radius: 0.5vw;
-    height: 2.7vw;
+    max-width: 12vw;
+    max-height: 2.7vw;
     font-size: 1vw;
-    padding: 0.4vw 1vw 0.5vw 1vw;
+    padding: 0.8vw 1vw 0.8vw 1vw;
     margin: 0.5vw 0 0 0.3vw;
     background-color: rgb(221, 221, 221);
 }
@@ -200,8 +213,8 @@ hr{
 }
    
 .right li button img{
-    width: 16px;
-    height: 16px;
+    width: 1.2vw;
+    height: 1.2vw;
     margin: 0 0.5vw -0.2vw 0;
 }
 .right li .blue{
@@ -261,5 +274,24 @@ main{
     height: 20vw;
 }
 @media only screen and (min-width: 768px){
-    
+    header{
+        height: 78.5vh;
+    }
+    .background-header{
+        width: 69vw;
+        height: 55.3vh;
+    }
+    .user{
+        top: 33.3vh;
+        left: 28.49vw;
+
+    }
+    .camera{
+        top: 50.9vh;
+        left: 37vw;
+        width: 3vw;
+        height: 3vw;
+        max-width: 3vw;
+        max-height: 3vw;
+    }
 }
