@@ -2,7 +2,7 @@
 	--cor-de-fundo: rgb(81, 16, 143);
 	--cor-de-fundo-secundario: white;
 	--font-size-padrão: 3vw;
-	--cor-borda: rgb(169, 88, 245);
+	--cor-borda: rgb(140, 39, 235);
 	--container-size: 90vw;
 	--footer-font-color: white;
 	--font-color: black;
@@ -131,6 +131,10 @@ main .coluna article ul li a{
 	color: var(--font-color);
 	text-decoration: underline;
 }
+main article details{
+	text-align: left;
+	text-justify: none;
+}
 
 /*EXTRA*/
 
@@ -236,7 +240,9 @@ main .coluna article ul li a{
 	main .container{
 		max-width: var(--container-size);
 	}
-	
+	main article{
+		box-shadow: 0.4vw 0.4vw 0.3vw var(--cor-borda);
+	}
 	/*Footer*/
 	footer .redes-sociais ul li a img{
 		width: 4vw;
