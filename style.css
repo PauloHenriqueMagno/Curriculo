@@ -1,14 +1,14 @@
 :root {
 	--cor-de-fundo: rgb(81, 16, 143);
 	--cor-de-fundo-secundario: white;
-	--font-size-padrão: 2vh;
+	--font-size-padrão: 3vw;
 	--cor-borda: rgb(169, 88, 245);
 	--container-size: 90vw;
 	--footer-font-color: white;
 	--font-color: black;
 }
 /*Estilos Gerais*/
-html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li, a, main{
+html, body, main, article, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li, a, main{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -20,7 +20,7 @@ html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li
 	width: 100%;
 	max-width: var(--container-size);
 	margin: 0 auto;
-	padding: 5vw;
+	padding: 0.1vw 2vw 1vw 2vw;
 }
 
 
@@ -33,31 +33,36 @@ body{
 	font-family: 'Times New Roman', Arial;
 	font-size: var(--font-size-padrão);
 	color: var(--font-color);
+	background-color: var(--cor-de-fundo-secundario);
 }
 
 /*HEADER*/
 header{
 	background-color: var(--cor-de-fundo);
 	padding: 0 5vw;
-	padding-top: 3vh;
+	padding-top: 3vw;
 	color: var(--font-color);
 }
 header .container{
 	background-color: var(--cor-de-fundo-secundario);
 	position: relative;
+	padding: 3vw;
 }
 header .coluna img{
 	width: 20vw;
 	height: 25.5vw;
+	border: 0.1vw solid black;
+	border-radius: 1vw; 
 	display: block;
 	margin: auto;
+	margin-bottom: 1vw;
 }
-header .coluna-direita section{
+header .coluna-direita article{
 	font-size: var(--font-size-padrão);
 	text-align: center;
 }
 header .coluna ul{
-	margin: 2vh 0 0;
+	margin: 2vw 0 0 0;
 }
 header .coluna ul li{
 	margin: 0 0 2vh;
@@ -103,26 +108,26 @@ main{
 main .container{
 	max-width: var(--container-size);
 }
-main .coluna section{
+main .coluna article{
 	padding: 10px;
 	border-top: 1px solid var(--cor-borda);
 	margin: 10px 5px;
 	text-align: justify;
 }
-main .coluna section p{
+main .coluna article p{
 	margin: 8px 0 0 0;
 }
-main .coluna section ul{
+main .coluna article ul{
 	margin: 8px 0 0 0;
 }
-main .coluna section ul li{
+main .coluna article ul li{
 	margin:0 0 5px;
 }
-main .coluna section ul li h3{
+main .coluna article ul li h3{
 	font-size: var(--font-size-padrão);
 	text-align: left;
 }
-main .coluna section ul li a{
+main .coluna article ul li a{
 	color: var(--font-color);
 	text-decoration: underline;
 }
@@ -154,7 +159,7 @@ main .coluna section ul li a{
 		width: 2vw;
 		border-radius: 100%;
 		position: absolute;
-		top: 0.48vh;
+		top: 0.48vw;
 		transition: all ease 0.3s;
 		margin-left: 0.6vw;
 	}
@@ -216,13 +221,13 @@ main .coluna section ul li a{
 	header .coluna-direita{
 		flex-basis:70%;
 	}
-	header .coluna-direita section{
+	header .coluna-direita article{
 		font-size: var(--font-size-padrão);
 		text-align: left;
 	}
 	
 	/*Conteudo Principal*/
-	main .coluna section{
+	main .coluna article{
 		padding: 9px;
 		border: 1px solid var(--cor-borda);
 		margin: 10px 5px;
@@ -241,7 +246,7 @@ main .coluna section ul li a{
 	/*Botão Tema*/
 	label{
 		right: 2vw;
-		top: 3vh;
+		top: 3vw;
 	}
 	label span{
 		height: 2vw;

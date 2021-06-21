@@ -121,13 +121,13 @@ header{
     padding-bottom: 0.1vh
 }
 .name h1{
-    font-size: 6vh;
+    font-size: 1.5rem;
     font-family: 'Open Sans';
     line-height: 3.35vw;
 }
 
 .biografia a{
-    font-size: 2vh;
+    font-size: vh;
     font-weight: 700;
     color: rgb(75, 75, 255);
     text-decoration: none;
