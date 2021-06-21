@@ -61,7 +61,7 @@ body {
 /*Content*/
 .content{
 	width: 99%;
-	height: 70vh;
+	height: 73vh;
 	border: none;
 }
 
@@ -75,8 +75,34 @@ h2 {
 	text-align: center;
 }
 .conteudo ol{
-	padding-left: 6vw;
+	padding-left: 9vw;
 }
 .conteudo ol li{
 	margin-bottom: 2vh;
+}
+@media only screen and (min-width: 768px){
+	body{
+		background-size: 2.42vw 1.6vw;
+	}
+	.cabecalho { 
+		font-size: 1.5vw;
+		padding: 0.1vw;
+	}
+	.menu{
+		height: 4.5vw;
+	}
+	.menu ul li a {
+		font-size: 1.5vw;
+	}
+	.conteudo{
+		font-size: 2vw;
+	}
+	.conteudo ol{
+		padding-left: 6vw;
+	}
+}
+@media only screen and (max-height: 526px){
+	.menu{
+		height: 5vw;
+	}
 }
