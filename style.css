@@ -3,6 +3,7 @@
 	--cor-de-fundo-secundario: white;
 	--font-size-padrão: 3vw;
 	--cor-borda: rgb(140, 39, 235);
+	--cor-borda-shadow: rgba(140, 39, 235, 0.534);
 	--container-size: 90vw;
 	--footer-font-color: white;
 	--font-color: black;
@@ -56,6 +57,7 @@ header .coluna img{
 	display: block;
 	margin: auto;
 	margin-bottom: 1vw;
+	box-shadow: 0.1vw 0.1vw 1vw 0.1vw rgba(0, 0, 0, 0.39);
 }
 header .coluna-direita article{
 	font-size: var(--font-size-padrão);
@@ -131,9 +133,13 @@ main .coluna article ul li a{
 	color: var(--font-color);
 	text-decoration: underline;
 }
-main article details{
+main article{
 	text-align: left;
 	text-justify: none;
+}
+main article .linha span{
+	font-size: 0.8rem;
+	margin-top: 0.8vw;
 }
 
 /*EXTRA*/
@@ -241,7 +247,7 @@ main article details{
 		max-width: var(--container-size);
 	}
 	main article{
-		box-shadow: 0.4vw 0.4vw 0.3vw var(--cor-borda);
+		box-shadow: 0.4vw 0.4vw 0.3vw var(--cor-borda-shadow);
 	}
 	/*Footer*/
 	footer .redes-sociais ul li a img{
