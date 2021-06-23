@@ -143,7 +143,6 @@ main article .linha span{
 }
 
 /*EXTRA*/
-
 	/*Botão de tema*/
 	:root{
 		--bolinha: rgb(255, 0, 0);
@@ -192,7 +191,7 @@ main article .linha span{
 
 	/*Regras Gerais*/
 	:root{
-		--font-size-padrão: 3vh;
+		--font-size-padrão: 1rem;
 		--container-size: 80vw;
 	}
 	.linha{
