@@ -37,19 +37,19 @@ body{
 	background-color: var(--cor-de-fundo-secundario);
 }
 
-/*HEADER*/
-header{
+/*.Header*/
+#Header_index{
 	background-color: var(--cor-de-fundo);
 	padding: 0 5vw;
 	padding-top: 3vw;
 	color: var(--font-color);
 }
-header .container{
+#Header_index .container{
 	background-color: var(--cor-de-fundo-secundario);
 	position: relative;
 	padding: 3vw;
 }
-header .coluna img{
+#Header_index .coluna img{
 	width: 20vw;
 	height: 25.5vw;
 	border: 0.1vw solid black;
@@ -59,17 +59,17 @@ header .coluna img{
 	margin-bottom: 1vw;
 	box-shadow: 0.1vw 0.1vw 1vw 0.1vw rgba(0, 0, 0, 0.39);
 }
-header .coluna-direita article{
+#Header_index .coluna-direita article{
 	font-size: var(--font-size-padrão);
 	text-align: center;
 }
-header .coluna ul{
+#Header_index .coluna ul{
 	margin: 2vw 0 0 0;
 }
-header .coluna ul li{
+#Header_index .coluna ul li{
 	margin: 0 0 2vh;
 }
-header .coluna ul li a{
+#Header_index .coluna ul li a{
 	color: var(--font-color);
 }
 
@@ -110,37 +110,68 @@ main{
 main .container{
 	max-width: var(--container-size);
 }
-main .coluna article{
+main article{
 	padding: 10px;
 	border-top: 1px solid var(--cor-borda);
 	margin: 10px 5px;
 	text-align: justify;
 }
-main .coluna article p{
+main article header h2{
+	text-align: center;
+}
+main article main p{
 	margin: 8px 0 0 0;
 }
-main .coluna article ul{
+main article main ul{
 	margin: 8px 0 0 0;
 }
-main .coluna article ul li{
+main article main ul li{
 	margin:0 0 5px;
 }
-main .coluna article ul li h3{
+main article main ul li h3{
 	font-size: var(--font-size-padrão);
-	text-align: left;
+	text-align: center;
 }
-main .coluna article ul li a{
+main article main ul li a{
 	color: var(--font-color);
 	text-decoration: underline;
 }
-main article{
-	text-align: left;
-	text-justify: none;
+main article main ul li img{
+	width: 100%;
+	height: 100%;
 }
-main article .linha span{
-	font-size: 0.8rem;
-	margin-top: 0.8vw;
+main .coluna article:last-child main ul{
+	display: flex;
+	justify-content: space-around;
 }
+main .certificado article main ul li{
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+}
+main .certificado article main ul:first-child li{
+	padding: 0.2rem;
+}
+main .certificado article main ul:last-child{
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: scroll;
+	padding: 1rem 3rem;
+}
+main .certificado article main ul:last-child li{
+	display: flex;
+	flex-direction: row;
+	border: 2px solid rgb(76, 0, 255);
+	border-radius: 1rem;
+	justify-content: center;
+	align-items: center;
+	margin: 0.5em;
+}
+main .certificado article main ul:last-child li img{
+	width: 60vw;
+	height: auto;
+}
+
 
 /*EXTRA*/
 	/*Botão de tema*/
@@ -210,44 +241,51 @@ main article .linha span{
 		padding: 30px;
 	}
 	
-	/*Header*/
-	header .container{
+	/*#Header_index*/
+	#Header_index .container{
 		position: relative;
 	}
-	header .linha{
+	#Header_index .linha{
 		align-items: center;
 	}
-	header .coluna-esquerda{
+	#Header_index .coluna-esquerda{
 		flex-basis:30%;
 	}
-	header .coluna img{
+	#Header_index .coluna img{
 		max-width: 20vw;
-		/*border-radius: 10%;*/
 		display: initial;
 		margin-left: initial;
 		margin-right: initial;
 	}
-	header .coluna-direita{
+	#Header_index .coluna-direita{
 		flex-basis:70%;
 	}
-	header .coluna-direita article{
+	#Header_index .coluna-direita article{
 		font-size: var(--font-size-padrão);
 		text-align: left;
 	}
 	
 	/*Conteudo Principal*/
-	main .coluna article{
+	main article{
 		padding: 9px;
 		border: 1px solid var(--cor-borda);
 		margin: 10px 5px;
 		border-radius: 10px;
+		box-shadow: 0.4vw 0.4vw 0.3vw var(--cor-borda-shadow);
 	}
 	main .container{
 		max-width: var(--container-size);
 	}
-	main article{
-		box-shadow: 0.4vw 0.4vw 0.3vw var(--cor-borda-shadow);
+	main .certificado{
+		width: 100%;	
 	}
+	main .certificado article main ul:first-child{
+		columns: 2;
+	}
+	main .certificado article main ul:last-child li img{
+		width: 39vw;
+	}
+
 	/*Footer*/
 	footer .redes-sociais ul li a img{
 		width: 4vw;
