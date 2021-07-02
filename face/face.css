@@ -1,4 +1,4 @@
-html, body, header, section, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li, hr, a, main{
+html, body, header, section, figure, button,img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li, hr, a, main{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -14,35 +14,32 @@ body{
 }
 
 /*Header*/
-header{
-    position: relative;
+.all{
     background-color:  white;
-    height: 78vh;
 }
-
 .container{
     margin: auto;
     width: 62vw;
 }
 
 .background-header{
+    position: relative;
     margin: auto;
     width: 69vw;
     height: 25vh;
     background-color: rgb(40, 43, 255);
-    position: relative;
     border-radius: 0 0 1vw 1vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
 
 .user{
-    top: 18.4vh;
-    left: 28.49vw;
-    position: absolute;
-
+    transform: translateY(10%);
 }
 .user img{
-    max-width: 12vw;
-    max-height: 12vw;
+    width: 10rem;
+    height: 10rem;
     width: 12vw;
     height: 12vw;
     border-radius: 100%;
@@ -54,59 +51,50 @@ header{
 }
 .camera{
     position: absolute;
-    top: 23.6vh;
-    left: 37.9vw;
+    display:block;
     border-style: none;
+    background-color: gray;
     width: 3vw;
     height: 3vw;
-    max-width: 3vw;
-    max-height: 3vw;
-    background-color: gray;
+    transform: translate(4vw, 0.5rem);
     border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .camera img{
-    background-color: rgb(0,0,0,0);
     margin: 0px;
-    max-width: 1.7vw;
-    max-height: 1.7vw;
-    width: 1.7vw;
-    height: 1.7vw;
-    border-style: none;
-    padding: 0px;
-}
-.change-picture a{
-    color:black
+    width: 1.5em;
+    height: 1.5em;
 }
 .change-picture{
-    width: 15vw;
-    height: 5.9vh;
-    top: 47vh;
-    left: 53vw;
-    position: absolute;
+    display: contents;
+}
+.change-picture a{
+    color:black;
     background: white;
-    font-size: 1vw;
+    font-size: 0.6em;
+    padding: 0.25rem;
     border: 0;
     border-radius: 0.5vw;
+    position: absolute;
+    right: 0px;
+    margin: 0.5rem;
+    font-family: 'Segoe UI';
+    display: flex;
+    font-weight: 600; 
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
-.change-picture:hover{
+.change-picture a:hover{
     background-color:rgb(221, 221, 221);
 }
 .change-picture img{
-    position: absolute;
-    top: 1vh;
-    left: 1vw;
     width: 1.7vw;
+    height: auto;
+    margin-right: 0.5em;
 }
-.change-picture span{
-    position: absolute;
-    width: 15vw;
-    top: 1.7vh;
-    left: 1.5vw;
-    font-family: 'Segoe UI';
-    font-size: 1vw;
-    font-weight: 600; 
-}
-
 .name{
     display: flex;
     align-items: center;
@@ -115,13 +103,14 @@ header{
     margin: 3.5vh 0 0.6vw 0;
 }
 .biografia{
+    font-size: 1.5vw;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-bottom: 0.1vh
 }
 .name h1{
-    font-size: 1.5rem;
+    font-size: 2vw;
     font-family: 'Open Sans';
     line-height: 3.35vw;
 }
@@ -139,50 +128,39 @@ header{
 
 hr{
     color:rgba(207, 207, 207, 0.432);
-    font-size: 0.1vw;
+    font-size: 1px;
+}
+#background{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 .menu{
-    display: inline-block;
-    max-width: 62vw;
     width: 62vw;
-    max-height: 8vh;
-    padding: 0vw;
-    background-color: white;
-    bottom: 0vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
 }
-.menu ul li {
-    display: inline;
+.menu ul{
+    display: flex;
+    flex-direction: row;
 }
 .menu ul li button a, .menu ul li label{
     color: black;
-
 }
-
 .left li label{
-    padding: 1.3vw 1vw 1.3vw 1vw;
-    max-width: 2.6vw;
-    max-height: 2vw;
+    display: grid;
+    padding: 0.5rem;
     color: black;
-    border-style: none;
-    font-size: 2vh;
+    font-size: 1vw;
     font-weight: 700;
     background-color: white;
-}
-.left li #Mais{
-    padding: 1.2vw 1vw 1.3vw 1vw;
-    max-width: 4.5vw;
-    color: black;
-    border-style: none;
-    font-size: 2.25vh;
-    font-weight: 700;
-    background-color: white;
-}
-.left li label:hover, .left li #Mais:hover{
     border-radius: 0.5vw;
-    background-color: rgb(221, 221, 221);
 }
-.left{
-    float: left;
+.left li label:hover{
+    background-color: rgb(221, 221, 221);
 }
 #Publica[type=radio]:checked +label, #Publica[type=button]:checked:hover, 
 #Sobre[type=radio]:checked +label, #Sobre[type=button]:checked:hover, 
@@ -190,13 +168,11 @@ hr{
 #Fotos[type=radio]:checked +label, #Fotos[type=button]:checked:hover{   
     color: rgb(77, 77, 255);
     border-radius: 0;
-    padding-bottom: 1.3vw;
     border-bottom: 0.3vw solid rgb(77, 77, 255);
     background-color: white;
 }
-
 .right{
-    float: right;
+    margin-bottom: 0.3em;
 }
 .right li button{
     border-style: none;
@@ -211,7 +187,6 @@ hr{
 .right li button:hover{
     background-color: rgb(184, 184, 184);
 }
-   
 .right li button img{
     width: 1.2vw;
     height: 1.2vw;
@@ -272,26 +247,4 @@ hr{
 main{
     background-color:rgb(161, 161, 161);
     height: 20vw;
-}
-@media only screen and (min-width: 768px){
-    header{
-        height: 78.5vh;
-    }
-    .background-header{
-        width: 69vw;
-        height: 55.3vh;
-    }
-    .user{
-        top: 33.3vh;
-        left: 28.49vw;
-
-    }
-    .camera{
-        top: 50.9vh;
-        left: 37vw;
-        width: 3vw;
-        height: 3vw;
-        max-width: 3vw;
-        max-height: 3vw;
-    }
 }
