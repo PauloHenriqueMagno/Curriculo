@@ -9,18 +9,18 @@
         <script type="text/javascript" src="code.js"></script>
     </head>
     <body>
-       <div class="all">
-            <header>
+        <header>
+                <div class="all">
                 
                 <div class="background-header">
                     <picture class="user">
-                        <img src="image/user.png">
+                        <img src="../image/user.png">
                     </picture>
                     <button class="camera">
-                        <a href="face.html"><img src="image/camera.png"></a>
+                        <a href="#"><img src="../image/camera.png"></a>
                     </button>
                     <button class="change-picture">
-                        <a href="face.html"><img src="image/camera.png"><span>Editar foto da capa</span></a>
+                        <a href="#"><img src="../image/camera.png">Editar foto da capa</a>
                     </button>
                 </div>
 
@@ -33,54 +33,56 @@
 
                 </div>
                 <div class="biografia">
-                <p><a href="face.html">Adicionar biografia</a></p>
+                <p><a href="#">Adicionar biografia</a></p>
                 </div>
                 <hr>
-                <div class="menu">
-                    <ul class="left">
-                        <li><input class="hidden" type="radio" id="Publica" name="menu" checked>
-                            <label for="Publica">Publicações</label></li>
-                        <li><input class="hidden" type="radio" id="Sobre" name="menu">
-                            <label for="Sobre">Sobre</label></li>
-                        <li><input class="hidden" type="radio" id="Amigos" name="menu">
-                            <label for="Amigos">Amigos</label></li>
-                        <li><input class="hidden" type="radio" id="Fotos" name="menu">
-                            <label for="Fotos">Fotos</label></li>
-                        <li><input type="button" id="Mais" name="mais" value="Mais">
-                            <div for="Mais" class="mais">
-                                <ul>
-                                    <li><button>Arquivo de stories</button></li>
-                                    <li><button>Vídeos</button></li>
-                                    <li><button>Check-ins</button></li>
-                                    <li><button>Esportes</button></li>
-                                    <li><button>Música</button></li>
-                                    <li><button>Cinemas</button></li>
-                                    <li><button>Programas de TV</button></li>
-                                    <li><button>Livros</button></li>
-                                    <li><button>Aplicativos e jogos</button></li>
-                                    <li><button>Curtidas</button></li>
-                                    <li><button>Eventos</button></li>
-                                    <li><button>Perguntas</button></li>
-                                    <li><button>Avaliações feitas</button></li>
-                                    <li><button>Grupos</button></li>
-                                    <li><button>Gerenciar seções</button></li>
-                                </ul>
-                            </div></li>
-                    </ul>
-                    <ul class="right">
-                        <li><button class="blue"><a href="face.html"><img src="image/mais.png"><span>Adicionar ao story</span></a></button></li>
-                        <li><button><a href="face.html"><img src="image/lapis.png"><span>Editar perfil</span></a></button></li>
-                        <li><button class="conf"><a href="face.html"><span>...</span></a></button>
-                            <div id="config" class="hidden">
-                                <ul>
-                                    <li>Mudar nome</li>
-                                    <li>Mudar foto de perfil</li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </header>
+            </div>
+        </header>
+        <div id="background">
+        <nav class="menu">
+            <ul class="left">
+                <li><input class="hidden" type="radio" id="Publica" name="menu" checked>
+                    <label for="Publica">Publicações</label></li>
+                <li><input class="hidden" type="radio" id="Sobre" name="menu">
+                    <label for="Sobre">Sobre</label></li>
+                <li><input class="hidden" type="radio" id="Amigos" name="menu">
+                    <label for="Amigos">Amigos</label></li>
+                <li><input class="hidden" type="radio" id="Fotos" name="menu">
+                    <label for="Fotos">Fotos</label></li>
+                <li><input class="hidden" type="button" id="Mais" name="mais" value="Mais">
+                    <div for="Mais" class="mais"><ul>
+                            <li><button>Arquivo de stories</button></li>
+                            <li><button>Vídeos</button></li>
+                            <li><button>Check-ins</button></li>
+                            <li><button>Esportes</button></li>
+                            <li><button>Música</button></li>
+                            <li><button>Cinemas</button></li>
+                            <li><button>Programas de TV</button></li>
+                            <li><button>Livros</button></li>
+                            <li><button>Aplicativos e jogos</button></li>
+                            <li><button>Curtidas</button></li>
+                            <li><button>Eventos</button></li>
+                            <li><button>Perguntas</button></li>
+                            <li><button>Avaliações feitas</button></li>
+                            <li><button>Grupos</button></li>
+                            <li><button>Gerenciar seções</button></li>
+                        </ul></div>
+                    <label for="Mais">Mais</label></li>
+                    </li>
+            </ul>
+            <ul class="right">
+                <li><button class="blue"><a href="#"><img src="../image/mais.png"><span>Adicionar ao story</span></a></button></li>
+                <li><button><a href="face.html"><img src="../image/lapis.png"><span>Editar perfil</span></a></button></li>
+                <li><button class="conf"><a href="#"><span>...</span></a></button>
+                    <div id="config" class="hidden">
+                        <ul>
+                            <li>Mudar nome</li>
+                            <li>Mudar foto de perfil</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
         </div>
         
     </body>
