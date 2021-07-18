@@ -34,7 +34,7 @@ header{
     background-color: var(--color-primary);
     width: 100%;
     max-width: 950px;
-    height: 20vw;
+    height: 25vw;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -65,7 +65,7 @@ header{
 .header_background_button{
     position: absolute;
     right: 1vw;
-    margin-bottom: 1%;
+    margin-bottom: 1.5%;
     background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
@@ -92,6 +92,9 @@ header:nth-child(1) .container{
 }
 .header_user_name{
     font-size: 1rem;
+}
+.header_user_biografia{
+    font-size: 0.6rem;
 }
 /*HEADER*/
 
@@ -269,6 +272,9 @@ main .main_stick_menu_right li:nth-child(1) button img{
     }
     .header_user_name{
         font-size: 1.5rem;
+    }
+    .header_user_biografia{
+        font-size: 1rem;
     }
 }
 @media only screen and (min-width: 761px){
