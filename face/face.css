@@ -222,31 +222,37 @@ main .main_stick_menu_right li:nth-child(1) button img{
 
 /*MIDIA*/
 @media only screen and (min-width: 420px){
-    .mobile_hidden:nth-child(1) li{
+    .mobile_hidden:nth-child(1){
         display: block;
     }
-    .mobile_show:nth-child(1) li{
+    .mobile_show:nth-child(1){
         display: none;
     }
 }
 @media only screen and (min-width: 495px){
-    .mobile_hidden:nth-child(2) li{
+    .mobile_hidden:nth-child(2){
         display: block;
     }
-    .mobile_show:nth-child(2) li{
+    .header_user_camera.mobile_hidden{
+        display: none;
+    }
+    .mobile_show:nth-child(2){
         display: none;
     }
 }
 @media only screen and (min-width: 566px){
-    .mobile_hidden:nth-child(3) li{
+    .mobile_hidden:nth-child(3){
         display: block;
     }
-    .mobile_show:nth-child(3) li{
+    .mobile_show:nth-child(3){
         display: none;
     }
 }
 @media only screen and (min-width: 637px){
     .mobile_hidden{
+        display: block;
+    }
+    .header_user_camera.mobile_hidden{
         display: block;
     }
     .mobile_show{

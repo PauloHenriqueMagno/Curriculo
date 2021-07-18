@@ -28,13 +28,12 @@ function change_name(){
     hthree.innerText="Insira um novo nome:";
 
     input.id="change_name";
-    input.type="name";
-    input.textContent = "name";
+    input.type="text";
+    input.placeholder = user_name;
     input.style.border = "1px solid black"
     input.style.width="80%";
     input.style.padding="5px";
     input.style.borderRadius="5px";
-    input.value = user_name;
     
     button_submit.id="submit_name"
     button_submit.type="submit";
