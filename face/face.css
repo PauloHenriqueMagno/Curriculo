@@ -90,6 +90,9 @@ header:nth-child(1) .container{
 .header_user_name, .header_user_biografia{
     text-align: center;
 }
+.header_user_name{
+    font-size: 1rem;
+}
 /*HEADER*/
 
 /*MAIN*/
@@ -263,6 +266,9 @@ main .main_stick_menu_right li:nth-child(1) button img{
     }
     main .main_stick_menu_right li button{
         font-size: 0.9rem;
+    }
+    .header_user_name{
+        font-size: 1.5rem;
     }
 }
 @media only screen and (min-width: 761px){
