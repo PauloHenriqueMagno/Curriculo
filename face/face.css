@@ -1,250 +1,268 @@
-html, body, header, section, figure, button,img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li, hr, a, main{
-	margin: 0;
+html, body, header,main,footer section, figure, button,img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ol, ul, li, hr, a, main{
+    margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	list-style: none;
 	text-decoration: none;
+    border-style: none;
+}
+:root{
+    --color-primary:rgb(0, 132, 255);
 }
 body{
-    background-color: gray;
-    color: black;
+    font-family: 'Open Sans';
+}
+.container{
+    width: 100%;
+    max-width: 750px;
 }
 .hidden{
     display: none;
 }
-
-/*Header*/
-.all{
-    background-color:  white;
-}
-.container{
-    margin: auto;
-    width: 62vw;
+button, label{
+    cursor: pointer;
 }
 
-.background-header{
-    position: relative;
-    margin: auto;
-    width: 69vw;
-    height: 25vh;
-    background-color: rgb(40, 43, 255);
-    border-radius: 0 0 1vw 1vw;
+/*HEADER*/
+header{
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+.header_background_image{
+    position: relative;
+    background-color: var(--color-primary);
+    width: 100%;
+    max-width: 1000px;
+    height: 20vw;
+    display: flex;
     justify-content: center;
+    align-items: flex-end;
+    border-radius: 0 0 10px 10px;
 }
-
-.user{
-    transform: translateY(10%);
-}
-.user img{
-    width: 10rem;
-    height: 10rem;
-    width: 12vw;
-    height: 12vw;
-    border-radius: 100%;
-    background: gray;
-    border: 0.4vw black solid;
-    align-content: center;
-    display: block;
+.header_user{
+    position: absolute;
     filter: invert(100%);
-}
-.camera{
-    position: absolute;
-    display:block;
-    border-style: none;
-    background-color: gray;
-    width: 3vw;
-    height: 3vw;
-    transform: translate(4vw, 0.5rem);
+    border: 5px solid rgb(0, 0, 0);
     border-radius: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.camera img{
-    margin: 0px;
-    width: 1.5em;
-    height: 1.5em;
-}
-.change-picture{
-    display: contents;
-}
-.change-picture a{
-    color:black;
-    background: white;
-    font-size: 0.6em;
-    padding: 0.25rem;
-    border: 0;
-    border-radius: 0.5vw;
-    position: absolute;
-    right: 0px;
-    margin: 0.5rem;
-    font-family: 'Segoe UI';
-    display: flex;
-    font-weight: 600; 
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-.change-picture a:hover{
-    background-color:rgb(221, 221, 221);
-}
-.change-picture img{
-    width: 1.7vw;
-    height: auto;
-    margin-right: 0.5em;
-}
-.name{
-    display: flex;
-    align-items: center;
-    font-family: "Open Sans";
-    justify-content: center;
-    margin: 3.5vh 0 0.6vw 0;
-}
-.biografia{
-    font-size: 1.5vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 0.1vh
-}
-.name h1{
-    font-size: 2vw;
-    font-family: 'Open Sans';
-    line-height: 3.35vw;
-}
-
-.biografia a{
-    font-size: vh;
-    font-weight: 700;
-    color: rgb(75, 75, 255);
-    text-decoration: none;
-}
-.biografia a:hover{
-    text-decoration: underline;
-    
-}
-
-hr{
-    color:rgba(207, 207, 207, 0.432);
-    font-size: 1px;
-}
-#background{
+    width: 15%;
+    transform: translateY(20%);
     background-color: white;
+}
+.header_user_camera{
+    position: absolute;
+    transform: translate(150%, 50%);
+    background-color: rgb(221, 221, 221);
+    border-radius: 100%;
+    padding: 0.5%;
+}
+.header_user_camera:hover{
+    background-color: rgb(190, 190, 190);
+}
+.header_user_camera img{
+    width: 25px;
+}
+.header_background_button{
+    position: absolute;
+    right: 1vw;
+    margin-bottom: 1%;
+    background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
-    justify-content: center;
-    position: relative;
-}
-.menu{
-    width: 62vw;
-    display: flex;
-    align-items: flex-end;
     justify-content: space-between;
+    padding: 5px;
+    border-radius: 10px;
 }
-.menu ul{
+.header_background_button img{
+    width: 1.5em;
+}
+.header_background_button:hover{
+    background-color: rgb(240, 240, 240);
+}
+.header_background_button span{
+    margin-left: 5px;
+}
+header:nth-child(1) .container{
+    padding: 3vw 0 1vw;
+    border-bottom: 1px solid rgb(180, 180, 180);
+}
+.header_user_name, .header_user_biografia{
+    text-align: center;
+}
+/*HEADER*/
+
+/*MAIN*/
+main{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(218, 218, 218);
+}
+#main_stick-menu_container{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.301);
+
+}
+main .main_stick-menu{
+    width: 100%;
+    max-width: 750px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+main .main_stick_menu_left{
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-left: 3px;
+    gap: 23px;
 }
-.menu ul li button a, .menu ul li label{
-    color: black;
-}
-.left li label{
+main .main_stick_menu_left li button{
     display: grid;
-    padding: 0.5rem;
-    color: black;
-    font-size: 1vw;
-    font-weight: 700;
+    width: 100%;
+}
+main .main_stick_menu_left li button label,
+main .main_stick_menu_left li #more{
+    width: 100%;
+    padding: 1em 1em;
+    font-size: 0.7rem;
     background-color: white;
-    border-radius: 0.5vw;
+    transition: 0.3s;
+    border-bottom: 1px double white;
 }
-.left li label:hover{
-    background-color: rgb(221, 221, 221);
-}
-#Publica[type=radio]:checked +label, #Publica[type=button]:checked:hover, 
-#Sobre[type=radio]:checked +label, #Sobre[type=button]:checked:hover, 
-#Amigos[type=radio]:checked +label, #Amigos[type=button]:checked:hover,
-#Fotos[type=radio]:checked +label, #Fotos[type=button]:checked:hover{   
-    color: rgb(77, 77, 255);
+main .main_stick_menu_left li input:checked ~ button label{
+    border-bottom: 1px solid var(--color-primary);
     border-radius: 0;
-    border-bottom: 0.3vw solid rgb(77, 77, 255);
     background-color: white;
 }
-.right{
-    margin-bottom: 0.3em;
+main .main_stick_menu_left li button label:hover,
+main .main_stick_menu_left li #more:hover{
+    background-color: rgb(219, 219, 219);
+    border-radius: 5px;
 }
-.right li button{
-    border-style: none;
-    border-radius: 0.5vw;
-    max-width: 12vw;
-    max-height: 2.7vw;
-    font-size: 1vw;
-    padding: 0.8vw 1vw 0.8vw 1vw;
-    margin: 0.5vw 0 0 0.3vw;
+main .main_stick_menu_left li #more:focus + nav#more-menu{
+    display: block;
+}
+main .main_stick_menu_left li nav#more-menu{
+    position: absolute;
+    /*transform: translateX(-30%);*/
+    height: 150px;
+    overflow-y: scroll;
+    border-radius: 5px;
+}
+main .main_stick_menu_left li nav#more-menu li{
+    width: 100%;
+}
+main .main_stick_menu_left li nav#more-menu li button{
+    width: 100%;
+    padding: 14px;
+    font-size: 10px;
+}
+main .main_stick_menu_left li nav#more-menu li button:hover{
+    background-color: rgb(180, 180, 180);
+}
+main .main_stick_menu_right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 5px;
+}
+main .main_stick_menu_right li{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 2px;
+}
+main .main_stick_menu_right li button{
+    height: 80%;
+    padding: 0.7em;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    transition: 0.2s;
+    font-size: 0.8rem;
+}
+main .main_stick_menu_right li button:hover{
     background-color: rgb(221, 221, 221);
 }
-.right li button:hover{
-    background-color: rgb(184, 184, 184);
+main .main_stick_menu_right li button img{
+    margin-right: 3px;
 }
-.right li button img{
-    width: 1.2vw;
-    height: 1.2vw;
-    margin: 0 0.5vw -0.2vw 0;
-}
-.right li .blue{
-    background-color: rgb(36, 36, 255);
-}
-.right li .blue img{
-    filter: invert(100%);
-}
-.right li .blue a{
+main .main_stick_menu_right li:nth-child(1) button{
+    background-color: var(--color-primary);
     color: white;
 }
-.right li .blue:hover{
-    background-color: blue;
+main .main_stick_menu_right li:nth-child(1) button:hover{
+    background-color: rgb(0, 108, 209);
 }
+main .main_stick_menu_right li:nth-child(1) button img{
+    filter: invert(100%)
+}
+/*MAIN*/
 
-#Mais[type=button]:focus +.mais{
-    display: block;
+/*EXTRAS*/
+.form_name{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    margin:15vh auto;
+    width: 60vw;
+    height: 25vw;
+    background: white;
+    border-radius: 10px;
 }
-#Mais:hover{
-    background-color: rgba(219, 219, 219, 0.300);
-}
-
-.mais{
-    border-style: none;
-    text-align: left;
-    background-color: white;
-    position: absolute;
+.mobile_hidden{
     display: none;
-    top: 4.6vw;
-    left: 41vw;
-    width: 25vw;
-    height: 30vw;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    border-radius: 0.3vw;
-    border: white solid;
-    box-shadow: 1px 1px 15px 5px rgba(0, 0, 0, 0.192);
-    padding: 0.5vw;
 }
-.mais ul li{
-    display: block;
+/*EXTRAS*/
+
+/*MIDIA*/
+@media only screen and (min-width: 420px){
+    .mobile_hidden:nth-child(1) li{
+        display: block;
+    }
+    .mobile_show:nth-child(1) li{
+        display: none;
+    }
 }
-.mais ul li button{
-    border-style: none;
-    display: block;
-    width: 25vw;
-    padding: 1vw 1vw 1vw 1vw;
-    border-radius: 0.5vw;
-    text-align: left;
-    background-color: white;
+@media only screen and (min-width: 495px){
+    .mobile_hidden:nth-child(2) li{
+        display: block;
+    }
+    .mobile_show:nth-child(2) li{
+        display: none;
+    }
 }
-.mais button:hover{
-        background-color: rgba(219, 219, 219, 0.300);
+@media only screen and (min-width: 566px){
+    .mobile_hidden:nth-child(3) li{
+        display: block;
+    }
+    .mobile_show:nth-child(3) li{
+        display: none;
+    }
 }
-main{
-    background-color:rgb(161, 161, 161);
-    height: 20vw;
+@media only screen and (min-width: 637px){
+    .mobile_hidden{
+        display: block;
+    }
+    .mobile_show{
+        display: none;
+    }
 }
+@media only screen and (min-width: 750px){
+    #main_stick-menu_container{
+        display: flex;
+        justify-content: center;
+    }
+    main .main_stick_menu_left{
+        margin-left: 0px;
+    }
+    main .main_stick_menu_right{
+        margin-right: 0px;
+    }
+}
+/*MIDIA*/

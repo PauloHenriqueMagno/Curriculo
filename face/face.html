@@ -5,85 +5,86 @@
         <meta name="autor" content="Paulo Henrique Magno">
         <meta name="viewport" content="width=device-width, incial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="face.css">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-        <script type="text/javascript" src="code.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
     </head>
     <body>
         <header>
-                <div class="all">
-                
-                <div class="background-header">
-                    <picture class="user">
-                        <img src="../image/user.png">
-                    </picture>
-                    <button class="camera">
-                        <a href="#"><img src="../image/camera.png"></a>
-                    </button>
-                    <button class="change-picture">
-                        <a href="#"><img src="../image/camera.png">Editar foto da capa</a>
-                    </button>
-                </div>
-
-                <div class="container">
-
-                <div class="name">
-                <h1><strong id="nome">
-                    <script>document.getElementById("nome").innerHTML = name;</script>
-                </strong></h1>
-
-                </div>
-                <div class="biografia">
-                <p><a href="#">Adicionar biografia</a></p>
-                </div>
-                <hr>
+            
+            <div class="header_background_image">
+                <img src="../image/user.png" alt="Usuario" class="header_user">
+                <button class="header_user_camera mobile_hidden">
+                <img src="../image/camera.png" alt="Mudar imagem de usuario">
+                </button>
+                <button class="header_background_button"><img src="../image/camera.png"><span class="mobile_hidden">Editar foto de capa</span></button>
             </div>
+
+            <div class="container">
+                <h1 class="header_user_name" id="user_name"></h1>
+                <p class="header_user_biografia"><a href="#">Adicionar biografia</a></p>
+            </div>
+
         </header>
-        <div id="background">
-        <nav class="menu">
-            <ul class="left">
-                <li><input class="hidden" type="radio" id="Publica" name="menu" checked>
-                    <label for="Publica">Publicações</label></li>
-                <li><input class="hidden" type="radio" id="Sobre" name="menu">
-                    <label for="Sobre">Sobre</label></li>
-                <li><input class="hidden" type="radio" id="Amigos" name="menu">
-                    <label for="Amigos">Amigos</label></li>
-                <li><input class="hidden" type="radio" id="Fotos" name="menu">
-                    <label for="Fotos">Fotos</label></li>
-                <li><input class="hidden" type="button" id="Mais" name="mais" value="Mais">
-                    <div for="Mais" class="mais"><ul>
-                            <li><button>Arquivo de stories</button></li>
-                            <li><button>Vídeos</button></li>
-                            <li><button>Check-ins</button></li>
-                            <li><button>Esportes</button></li>
-                            <li><button>Música</button></li>
-                            <li><button>Cinemas</button></li>
-                            <li><button>Programas de TV</button></li>
-                            <li><button>Livros</button></li>
-                            <li><button>Aplicativos e jogos</button></li>
-                            <li><button>Curtidas</button></li>
-                            <li><button>Eventos</button></li>
-                            <li><button>Perguntas</button></li>
-                            <li><button>Avaliações feitas</button></li>
-                            <li><button>Grupos</button></li>
-                            <li><button>Gerenciar seções</button></li>
-                        </ul></div>
-                    <label for="Mais">Mais</label></li>
-                    </li>
-            </ul>
-            <ul class="right">
-                <li><button class="blue"><a href="#"><img src="../image/mais.png"><span>Adicionar ao story</span></a></button></li>
-                <li><button><a href="face.html"><img src="../image/lapis.png"><span>Editar perfil</span></a></button></li>
-                <li><button class="conf"><a href="#"><span>...</span></a></button>
-                    <div id="config" class="hidden">
-                        <ul>
-                            <li>Mudar nome</li>
-                            <li>Mudar foto de perfil</li>
+        <main>
+            <div id="main_stick-menu_container">
+                <div class="container">
+                    <nav class="main_stick-menu">
+                        
+                        
+                        <ul class="main_stick_menu_left">
+                            <li class="mobile_hidden">
+                                <input class="hidden" type="radio" id="pub" name="menu" alt="Publicações">
+                                <button><label for="pub">Publicações</label></button>
+                            </li>
+                            <li class="mobile_hidden">
+                                <input class="hidden" type="radio" id="sobre" name="menu" alt="Sobre">
+                                <button><label for="sobre">Sobre</label></button>
+                            </li>
+                            <li class="mobile_hidden">
+                                <input class="hidden" type="radio" id="amigos" name="menu" alt="Amigos">
+                                <button><label for="amigos">Amigo</label></button>
+                            </li>
+                            <li class="mobile_hidden">
+                                <input class="hidden" type="radio" id="fotos" name="menu" alt="Fotos">
+                                <button><label for="fotos">Fotos</label></button>
+                            </li>
+                            <li>
+                                <button id="more">Mais</button>
+                                <nav class="hidden" id="more-menu">
+                                    <ul>
+                                    <li class="mobile_show"><button>Publicações</button></li>
+                                    <li class="mobile_show"><button>Sobre</button></li>
+                                    <li class="mobile_show"><button>Amigos</button></li>
+                                    <li class="mobile_show"><button>Fotos</button></li>
+                                    <li><button>Arquivo de stories</button></li>
+                                    <li><button>Vídeos</button></li>
+                                    <li><button>Check-ins</button></li>
+                                    <li><button>Esportes</button></li>
+                                    <li><button>Música</button></li>
+                                    <li><button>Cinemas</button></li>
+                                    <li><button>Programas de TV</button></li>
+                                    <li><button>Livros</button></li>
+                                    <li><button>Aplicativos e jogos</button></li>
+                                    <li><button>Curtidas</button></li>
+                                    <li><button>Eventos</button></li>
+                                    <li><button>Perguntas</button></li>
+                                    <li><button>Avaliações feitas</button></li>
+                                    <li><button>Grupos</button></li>
+                                    <li><button>Gerenciar seções</button></li>
+                                    </ul>        
+                                </nav>
+                            </li>
                         </ul>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-        </div>
-        
+
+                        <ul class="main_stick_menu_right">
+                            <li><button><img src="../image/mais.png">Adicionar ao story</button></li>
+                            <li><button onclick="change_name()"><img src="../image/lapis.png">Editar nome</button></li>
+                            <li><button>...</button></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </main>
+        <script type="text/javascript" src="code.js"></script>
     </body>
 </html>
