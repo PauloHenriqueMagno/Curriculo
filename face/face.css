@@ -137,6 +137,9 @@ main .main_stick_menu_left li #more{
     font-weight: 700;
     color: rgb(112, 112, 112);
 }
+main .main_stick_menu_left li #more{
+    padding: 1.5em 1em;
+}
 main .main_stick_menu_left li input:checked ~ button label{
     border-bottom: 3px solid var(--color-primary);
     color: var(--color-primary);
@@ -162,8 +165,8 @@ main .main_stick_menu_left li nav#more-menu li{
 }
 main .main_stick_menu_left li nav#more-menu li button{
     width: 100%;
-    padding: 14px;
-    font-size: 10px;
+    padding: 0.8em 2em;
+    font-size: 1rem;
 }
 main .main_stick_menu_left li nav#more-menu li button:hover{
     background-color: rgb(180, 180, 180);
