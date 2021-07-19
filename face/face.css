@@ -274,9 +274,10 @@ main div.container.flex{
 /*ASIDE*/
 aside.main_content_aside{
     flex-direction: column;
-    gap: 1rem;
     justify-content: flex-start;
-    margin-bottom: 10px;
+}
+aside.main_content_aside section.main_aside{
+    margin-bottom: 15px;
 }
 .main_content_aside .presentation{
     width: 100%;
