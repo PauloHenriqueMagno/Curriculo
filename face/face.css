@@ -350,6 +350,7 @@ aside.main_content_aside section.main_aside{
     width: 100%;
     border-bottom: 1px solid rgba(0, 0, 0, 0.404);
     padding: 0px 0px 10px 0px;
+    align-items: center;
 }
 .main_content_post_send_input img{
     width: 30px;
