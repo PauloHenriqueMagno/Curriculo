@@ -73,8 +73,7 @@ header{
 }
 .header_background_button{
     position: absolute;
-    right: 1.2vw;
-    margin-bottom: 6px;
+    right: 1.5vw;
     background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
@@ -82,6 +81,7 @@ header{
     padding: 10px;
     border-radius: 5px;
     font-weight: 600;
+    transform: translateY(-40%);
 }
 .header_background_button img{
     width: 1.5em;
@@ -267,14 +267,14 @@ main .main_stick_menu_right li:nth-child(1) button img{
 main div.container.flex{
     margin: 10px auto;
     padding: 0 10%;
-    gap: 15px;
+    gap: 1rem;
     flex-direction: column;
 }
 
 /*ASIDE*/
 aside.main_content_aside{
     flex-direction: column;
-    gap: 10px;
+    gap: 1rem;
     justify-content: flex-start;
 }
 .main_content_aside .presentation{
@@ -337,6 +337,7 @@ aside.main_content_aside{
 /*CONTENT*/
 .main_content{
     margin: 0px 0px 0px 0px;
+    gap: 10px;
 }
 .main_content_post_send{
     width: 100%;
@@ -366,12 +367,15 @@ aside.main_content_aside{
 }
 .main_content_post_send_buttons{
     margin-top: 10px;
-    justify-content: space-evenly
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .main_content_post_send_buttons button{
     background-color: white;
     display: flex;
+    justify-content: center;
     align-items: center;
+    width: 100%;
     font-size: 1rem;
     padding: 10px;
     border-radius: 10px;
@@ -482,16 +486,22 @@ aside.main_content_aside{
         padding: 0;
         margin: 10px auto;
         flex-direction: row;
+        gap: 15px
     }
     /*ASIDE*/
     aside.main_content_aside{
         flex-basis: 45%;
+        gap: 10px;
     }
     /*ASIDE*/
     
     /*CONTENT*/
     .main_content{
         flex-basis: 55%;
+        gap: 10px
+    }
+    .main_content_post_send_buttons{
+        flex-wrap: nowrap;
     }
     /*CONTENT*/
     
