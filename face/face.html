@@ -9,7 +9,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
     </head>
     <body>
-        <header>
+        <header class="main_header">
             
             <div class="header_background_image">
                 <img src="../image/user.png" alt="Usuario" class="header_user">
@@ -25,7 +25,7 @@
             </div>
 
         </header>
-        <main>
+        <main class="main_main">
             <div id="main_stick-menu_container">
                 <div class="container">
                     <nav class="main_stick-menu">
@@ -104,31 +104,95 @@
                     <button>Adicionar destaques</button>
                 </section>
 
-                <section class="main_content_aside_pictures main_aside">
-                    <div class="flex">
+                <section class="main_content_aside_section main_aside">
+                    <header class="flex">
                         <h2>Fotos</h2>
                         <button>Ver todas as fotos</button>
-                    </div>
-                    <div class="pictures_grid grid">
-                    <img src="../image/duck.jpg" alt="foto de pato de borracha">
-                    <img src="../image/duck.jpg" alt="foto de pato de borracha">
-                    <img src="../image/duck.jpg" alt="foto de pato de borracha">
-                    <img src="../image/duck.jpg" alt="foto de pato de borracha">
-                    <img src="../image/duck.jpg" alt="foto de pato de borracha">
-                    <img src="../image/duck.jpg" alt="foto de pato de borracha">
-                    <img src="../image/duck.jpg" alt="foto de pato de borracha">
-                    <img src="../image/duck.jpg" alt="foto de pato de borracha">
-                    </div>
+                    </header>
+                    <main class="pictures_grid grid">
+                    <figure class="aside_figure">
+                        <img src="../image/duck.jpg" alt="foto de pato de borracha">
+                        <figcaption class="hidden">Pato</figcaption>
+                    </figure>
+                    <figure class="aside_figure">
+                        <img src="../image/duck.jpg" alt="foto de pato de borracha">
+                        <figcaption class="hidden">Pato</figcaption>
+                    </figure>
+                    <figure class="aside_figure">
+                        <img src="../image/duck.jpg" alt="foto de pato de borracha">
+                        <figcaption class="hidden">Pato</figcaption>
+                    </figure>
+                    <figure class="aside_figure">
+                        <img src="../image/duck.jpg" alt="foto de pato de borracha">
+                        <figcaption class="hidden">Pato</figcaption>
+                    </figure>
+                    <figure class="aside_figure">
+                        <img src="../image/duck.jpg" alt="foto de pato de borracha">
+                        <figcaption class="hidden">Pato</figcaption>
+                    </figure>
+                    <figure class="aside_figure">
+                        <img src="../image/duck.jpg" alt="foto de pato de borracha">
+                        <figcaption class="hidden">Pato</figcaption>
+                    </figure>
+                    <figure class="aside_figure">
+                        <img src="../image/duck.jpg" alt="foto de pato de borracha">
+                        <figcaption class="hidden">Pato</figcaption>
+                    </figure>
+                    <figure class="aside_figure">
+                        <img src="../image/duck.jpg" alt="foto de pato de borracha">
+                        <figcaption class="hidden">Pato</figcaption>
+                    </figure>
+                    </main>
+                </section>
+                <section class="main_content_aside_section main_aside friends_section">
+                    <header class="flex_column">
+                        <div class="flex"><h2>Amigos</h2>
+                        <button>Ver todos os amigos</button></div>
+                        <p>8 amigos</p>
+                    </header>
+                    <main class="pictures_grid grid">
+                        <figure class="aside_figure">
+                            <img src="../image/user.png" alt="user">
+                            <figcaption>Erwin Smith</figcaption>
+                        </figure>
+                        <figure class="aside_figure">
+                            <img src="../image/user.png" alt="user">
+                            <figcaption>Eren Yeager</figcaption>
+                        </figure>
+                        <figure class="aside_figure">
+                            <img src="../image/user.png" alt="user">
+                            <figcaption>Marco Bodt</figcaption>
+                        </figure>
+                        <figure class="aside_figure">
+                            <img src="../image/user.png" alt="user">
+                            <figcaption>Reiner Braun</figcaption>
+                        </figure>
+                        <figure class="aside_figure">
+                            <img src="../image/user.png" alt="user">
+                            <figcaption>Mikasa</figcaption>
+                        </figure>
+                        <figure class="aside_figure">
+                            <img src="../image/user.png" alt="user">
+                            <figcaption>Sasha Braus</figcaption>
+                        </figure>
+                        <figure class="aside_figure">
+                            <img src="../image/user.png" alt="user">
+                            <figcaption>Jean Kirstein</figcaption>
+                        </figure>
+                        <figure class="aside_figure">
+                            <img src="../image/user.png" alt="user">
+                            <figcaption>Ymir</figcaption>
+                        </figure>
+                    </main>
                 </section>
 
             </aside>
 
-            <div class="main_content">
+            <div class="main_content" id="publications">
                 <section class="main_content_post_send">
                     <div class="main_content_post_send_input flex">
                         <img src="../image/user.png" alt="Usuário">
-                        <input class="hidden" type="button" name="what are you thinking?" id="post_input" value>
-                        <label for="post_input" >No que você está pensando?</label>
+                        <button onclick="poster()">No que você está pensando?</button>
                     </div>
                     <div class="main_content_post_send_buttons flex">
                         <button>
@@ -145,7 +209,6 @@
                         </button>
                     </div>
                 </section>
-                <section class="publications"></section>
             </div>
 
             </div>

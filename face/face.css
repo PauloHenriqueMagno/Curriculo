@@ -11,6 +11,7 @@ html, body, header,main,footer,aside, section, figure, button,img, div, input, t
 }
 body{
     font-family: 'Open Sans';
+    position: relative;
 }
 .container{
     width: 100%;
@@ -20,6 +21,11 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
+}
+.flex_column{
+    display: flex;
+    flex-direction: column;
 }
 .grid{
     display: grid;
@@ -33,7 +39,7 @@ button, label{
 }
 
 /*HEADER*/
-header{
+header.main_header{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -112,7 +118,7 @@ header:nth-child(1) .container{
 /*HEADER*/
 
 /*MAIN*/
-main{
+main.main_main{
     width: 100%;
     background-color: #F0F2F5;
 }
@@ -199,8 +205,11 @@ main .main_stick_menu_left li #more:focus + nav#more-menu{
 main .main_stick_menu_left li nav#more-menu{
     position: absolute;
     height: 150px;
+    background-color: white;
     overflow-y: scroll;
     border-radius: 5px;
+    border: 1px solid black;
+    padding: 10px;
 }
 main .main_stick_menu_left li nav#more-menu li{
     width: 100%;
@@ -209,6 +218,7 @@ main .main_stick_menu_left li nav#more-menu li button{
     width: 100%;
     padding: 0.8em 2em;
     font-size: 1rem;
+    border-radius: 5px;
 }
 main .main_stick_menu_left li nav#more-menu li button:hover{
     background-color: rgb(180, 180, 180);
@@ -309,30 +319,44 @@ aside.main_content_aside section.main_aside{
     font-weight: 600;
     background-color: #E4E3EB;
 }
-.main_content_aside_pictures{
+.main_content_aside_section{
     padding: 10px;
     background-color: white;
 }
-.main_content_aside_pictures div.flex{
+.main_content_aside_section .flex{
     align-items: center;
-    margin-bottom: 10px;
 }
-.main_content_aside_pictures div.flex button{
+.main_content_aside_section .flex button{
     background-color: white;
     padding: 10px;
     border-radius: 5px;
     font-size: 1.1em;
     color: var(--color-primary);
 }
-.main_content_aside_pictures div.flex button:hover{
+.main_content_aside_section .flex button:hover{
     background-color: rgb(219, 219, 219);
 }
-.main_content_aside_pictures .pictures_grid{
+.main_content_aside_section .pictures_grid{
+    margin-top: 10px;
     width: 100%;
     gap: 7px;
 }
-.main_content_aside_pictures .pictures_grid img{
+.main_content_aside_section .pictures_grid img{
+    border-radius: 5px;
     width: 100%;  
+}
+.main_content_aside_section.friends_section p{
+    color: rgb(112, 112, 112);
+}
+.main_content_aside_section.friends_section .pictures_grid .aside_figure{
+    margin-bottom: 25px;
+}
+.main_content_aside_section.friends_section .pictures_grid .aside_figure img{
+    background-color: white;
+    filter: invert(100%);
+}
+.main_content_aside_section.friends_section .pictures_grid .aside_figure figcaption{
+    font-weight: 600;
 }
 /*ASIDE*/
 
@@ -360,11 +384,12 @@ aside.main_content_aside section.main_aside{
     background-color: white;
     border-radius: 100%;
 }
-.main_content_post_send_input label{
+.main_content_post_send_input button{
     width: 100%;
     background-color: #F0F2F5;
     border-radius: 10px;
-    padding: 5px;
+    padding: 7px;
+    text-align: left;
     color: rgb(112, 112, 112);
 }
 .main_content_post_send_buttons{
@@ -389,6 +414,37 @@ aside.main_content_aside section.main_aside{
     margin-right: 5px;
     width: 30px;
 }
+.publication_posts{
+    width: 100%;
+    background-color: white;
+    margin-top: 15px;
+}
+.publication_posts header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid rgb(180, 180, 180);
+}
+.publication_posts header img{
+    width: 30px;
+    background-color: white;
+    filter: invert(100%);
+    border-radius: 100%;
+    margin: 15px;
+}
+.publication_posts header .flex_column{
+    width: 100%;
+    flex-basis: 50%;
+}
+.publication_posts header .flex_column p{
+    color: rgb(112, 112, 112);
+    font-weight: 700;
+}
+.publication_posts main p{
+    padding: 10px 15px 20px 15px;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
 /*CONTENT*/
 
 /*MAIN CONTENT*/
@@ -396,8 +452,10 @@ aside.main_content_aside section.main_aside{
 /*MAIN*/
 
 /*EXTRAS*/
+
+/*EDITAR NOME*/
 .form_name{
-    position: absolute;
+    position: fixed;
     display: flex;
     flex-direction:column;
     align-items:center;
@@ -411,18 +469,71 @@ aside.main_content_aside section.main_aside{
     border-radius: 5px;
     padding: 10px;
 }
+#change_name{
+    border : 1px solid black;
+    width: 90%;
+    padding: 5px;
+    border-radius: 5px;
+}
 .form_name #submit_name{
     margin: 10px;
     background-color: var(--color-primary);
     color: white;
+    padding:5px;
+    border-radius:4px;
+    border:1px solid rgb(0, 132, 255);
+    cursor:pointer;
 }
+/*EDITAR NOME*/
+
+/*PUBLICACAO*/
+.form_publication{
+    width: 85%;
+    position: fixed;
+    background-color: white;
+    margin: auto;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.404);
+    align-items: center;
+}
+.form_publication h3{
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(180, 180, 180);
+}
+.form_publication textarea#publication{
+    width: 90%;
+    margin-top: 25px;
+    font-size: 1rem;
+    height: 60%;
+    resize: none;
+}
+.form_publication textarea#publication:focus{
+    outline: none;
+}
+.form_publication input#submit_post{
+    margin: 10px 0 15px;
+    width: 94%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--color-primary);
+    color: white;
+    font-weight: 700;
+}
+/*PUBLICACAO*/
 .mobile_hidden{
     display: none;
 }
 /*EXTRAS*/
 
 /*MIDIA*/
-@media only screen and (min-width: 486px){
+@media only screen and (min-width: 370px){
     .mobile_hidden:nth-child(1){
         display: block;
     }
@@ -433,7 +544,7 @@ aside.main_content_aside section.main_aside{
         transform: translateX(-25%);
     }
 }
-@media only screen and (min-width: 580px){
+@media only screen and (min-width: 445px){
     .mobile_hidden:nth-child(2){
         display: block;
     }
@@ -444,7 +555,7 @@ aside.main_content_aside section.main_aside{
         display: none;
     }
 }
-@media only screen and (min-width: 678px){
+@media only screen and (min-width: 600px){
     .mobile_hidden:nth-child(3){
         display: block;
     }
