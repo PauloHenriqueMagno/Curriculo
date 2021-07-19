@@ -593,7 +593,7 @@ aside.main_content_aside section.main_aside{
         display: none;
     }
 }
-@media only screen and (min-width: 769px){
+@media only screen and (min-width: 800px){
     /*MAIN CONTENT*/
     main div.container.flex{
         padding: 0;
@@ -616,5 +616,10 @@ aside.main_content_aside section.main_aside{
     /*CONTENT*/
     
     /*MAIN CONTENT*/
+    /*EXTRAS*/
+    .form_publication{
+        width: 39%
+    }
+    /*EXTRAS*/
 }
 /*MIDIA*/

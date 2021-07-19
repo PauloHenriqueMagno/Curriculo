@@ -60,6 +60,11 @@ function submit_name(text){
 }
 
 function submit_post(text){
+    if(text===""||text===" "){
+        const popup_div = document.getElementById('close');
+        popup_div.remove();
+        return;
+    }else{
     const publication_place = document.getElementById("publications");
     const section = document.createElement("section");
     const div = document.createElement("div");
@@ -69,27 +74,28 @@ function submit_post(text){
     const img = document.createElement("img");
     const hfour = document.createElement("h4");
     const date_p = document.createElement("p");
-
+    
     section.className="publication_posts";
-
+    
     img.src = "../image/user.png";
     hfour.innerText = user_name;
     date_p.innerText = date();
-
+    
     div.className="flex_column";
     div.appendChild(hfour);
     div.appendChild(date_p);
     header.appendChild(img);
     header.appendChild(div);
-
-    p.innerHTML=text;
+    
+    p.innerHTML = text;
     main.appendChild(p);
     section.appendChild(header);
     section.appendChild(main);
     publication_place.appendChild(section);
-
+    
     const popup_div = document.getElementById('close');
     popup_div.remove();
+    }
 }
 
 function poster(){
