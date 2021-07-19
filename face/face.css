@@ -1,4 +1,4 @@
-html, body, header,main,footer section, figure, button,img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ol, ul, li, hr, a, main{
+html, body, header,main,footer,aside, section, figure, button,img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ol, ul, li, hr, a, main{
     margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -14,7 +14,16 @@ body{
 }
 .container{
     width: 100%;
-    max-width: 850px;
+    max-width: 900px;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 .hidden{
     display: none;
@@ -64,8 +73,8 @@ header{
 }
 .header_background_button{
     position: absolute;
-    right: 1vw;
-    margin-bottom: 1.5%;
+    right: 1.2vw;
+    margin-bottom: 6px;
     background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
@@ -96,13 +105,16 @@ header:nth-child(1) .container{
 .header_user_biografia{
     font-size: 0.6rem;
 }
+.header_user_biografia a{
+    color: var(--color-primary);
+    font-weight: 700;
+}
 /*HEADER*/
 
 /*MAIN*/
 main{
     width: 100%;
-    height: 100vh;
-    background-color: rgb(218, 218, 218);
+    background-color: #F0F2F5;
 }
 #main_stick-menu_container{
     position: sticky;
@@ -110,38 +122,43 @@ main{
     width: 100%;
     background-color: white;
     border-bottom: 1px solid rgba(0, 0, 0, 0.301);
-
+    z-index: 1;
 }
 main .main_stick-menu{
     width: 100%;
-    max-width: 850px;
+    max-width: 900px;
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
 }
 main .main_stick_menu_left{
-    display: flex;
-    flex-direction: row;
+    display: grid;
     justify-content: flex-start;
     align-items: flex-end;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     margin-left: 3px;
-    gap: 20px;
+    flex-basis: 50%;
+}
+main .main_stick_menu_left li{
+    width: 100%;
 }
 main .main_stick_menu_left li button{
-    display: grid;
+    display:flex;
+    justify-content: center;
     background-color: white;
     width: 100%;
 }
 main .main_stick_menu_left li button label,
 main .main_stick_menu_left li #more{
     width: 100%;
-    padding: 1.5em 0.5em;
+    padding: 1.5em 1em;
     font-size: 0.8rem;
     background-color: white;
     border-radius: 5px;
     margin-bottom: 3px;
     font-weight: 700;
     color: rgb(112, 112, 112);
+    text-align: center;
 }
 main .main_stick_menu_left li #more{
     padding: 1.5em 1em;
@@ -152,6 +169,25 @@ main .main_stick_menu_left li input:checked ~ button label{
     border-radius: 0;
     background-color: white;
     margin-bottom: 0px;
+}
+main .main_stick_menu_left li:nth-child(3) input:checked ~ div.friends{
+    display: block;
+}
+main .main_stick_menu_left li .friends{
+    position: absolute;
+    display: none;
+    background-color: white;
+    transform: translateX(-20%);
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.377);
+    padding: 5px;
+}
+main .main_stick_menu_left li .friends p{
+    display: flex;
+    align-items: center;
+}
+main .main_stick_menu_left li .friends p img{
+    margin-left: 5px;
 }
 main .main_stick_menu_left li button label:hover,
 main .main_stick_menu_left li #more:hover{
@@ -181,12 +217,14 @@ main .main_stick_menu_right{
     display: flex;
     flex-direction: row;
     margin-right: 5px;
+    flex-basis: 360px;
+    justify-content: flex-end;
 }
 main .main_stick_menu_right li{
     height: 100%;
     display: flex;
     align-items: center;
-    margin-left: 2px;
+    margin-left: 9px;
 }
 main .main_stick_menu_right li button{
     height: 60%;
@@ -219,18 +257,158 @@ main .main_stick_menu_right li:nth-child(1) button:hover{
 main .main_stick_menu_right li:nth-child(1) button img{
     filter: invert(100%)
 }
+
+/*MAIN CONTENT*/
+.main_content_aside.flex section,
+.main_content section{
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.356);
+}
+main div.container.flex{
+    margin: 10px auto;
+    padding: 0 10%;
+    gap: 15px;
+    flex-direction: column;
+}
+
+/*ASIDE*/
+aside.main_content_aside{
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;
+}
+.main_content_aside .presentation{
+    width: 100%;
+    background-color: white;
+    padding: 15px 5%;
+    flex-direction: column;
+}
+.main_content_aside .presentation ul{
+    margin-top: 10px;
+}
+.main_content_aside .presentation ul li{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 20px 0px;
+    width: 100%;
+}
+.main_content_aside .presentation ul li img{
+    width: 25px;
+    filter: grayscale(100%);
+    margin-right: 6px;
+}
+.main_content_aside .presentation button{
+    width: 100%;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+    font-weight: 600;
+    background-color: #E4E3EB;
+}
+.main_content_aside_pictures{
+    padding: 10px;
+    background-color: white;
+}
+.main_content_aside_pictures div.flex{
+    align-items: center;
+    margin-bottom: 10px;
+}
+.main_content_aside_pictures div.flex button{
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    color: var(--color-primary);
+}
+.main_content_aside_pictures div.flex button:hover{
+    background-color: rgb(219, 219, 219);
+}
+.main_content_aside_pictures .pictures_grid{
+    width: 100%;
+    gap: 7px;
+}
+.main_content_aside_pictures .pictures_grid img{
+    width: 100%;  
+}
+/*ASIDE*/
+
+/*CONTENT*/
+.main_content{
+    margin: 0px 0px 0px 0px;
+}
+.main_content_post_send{
+    width: 100%;
+    background-color: white;
+    padding: 15px;
+    margin: auto;
+}
+.main_content_post_send_input{
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.404);
+    padding: 0px 0px 10px 0px;
+}
+.main_content_post_send_input img{
+    width: 30px;
+    height: 30px;
+    margin-right: 13px;
+    filter: invert(100%);
+    background-color: white;
+    border-radius: 100%;
+}
+.main_content_post_send_input label{
+    width: 100%;
+    background-color: #F0F2F5;
+    border-radius: 10px;
+    padding: 5px;
+    color: rgb(112, 112, 112);
+}
+.main_content_post_send_buttons{
+    margin-top: 10px;
+    justify-content: space-evenly
+}
+.main_content_post_send_buttons button{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 10px;
+}
+.main_content_post_send_buttons button:hover{
+    background-color: #E4E3EB;
+}
+.main_content_post_send_buttons button img{
+    margin-right: 5px;
+    width: 30px;
+}
+/*CONTENT*/
+
+/*MAIN CONTENT*/
+
 /*MAIN*/
 
 /*EXTRAS*/
 .form_name{
-    display:flex;
+    position: absolute;
+    display: flex;
     flex-direction:column;
     align-items:center;
     justify-content:center;
-    margin: 15vh auto;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
     width: 60vw;
+    max-width: 700px;
     background: white;
     border-radius: 5px;
+    padding: 10px;
+}
+.form_name #submit_name{
+    margin: 10px;
+    background-color: var(--color-primary);
+    color: white;
 }
 .mobile_hidden{
     display: none;
@@ -277,17 +455,6 @@ main .main_stick_menu_right li:nth-child(1) button img{
         font-size: 1rem;
     }
 }
-@media only screen and (min-width: 761px){
-    .mobile_hidden{
-        display: block;
-    }
-    .header_user_camera.mobile_hidden{
-        display: block;
-    }
-    .mobile_show{
-        display: none;
-    }
-}
 @media only screen and (min-width: 750px){
     #main_stick-menu_container{
         display: flex;
@@ -299,5 +466,35 @@ main .main_stick_menu_right li:nth-child(1) button img{
     main .main_stick_menu_right{
         margin-right: 0px;
     }
+    .mobile_hidden{
+        display: block;
+    }
+    .header_user_camera.mobile_hidden{
+        display: block;
+    }
+    .mobile_show{
+        display: none;
+    }
+}
+@media only screen and (min-width: 769px){
+    /*MAIN CONTENT*/
+    main div.container.flex{
+        padding: 0;
+        margin: 10px auto;
+        flex-direction: row;
+    }
+    /*ASIDE*/
+    aside.main_content_aside{
+        flex-basis: 45%;
+    }
+    /*ASIDE*/
+    
+    /*CONTENT*/
+    .main_content{
+        flex-basis: 55%;
+    }
+    /*CONTENT*/
+    
+    /*MAIN CONTENT*/
 }
 /*MIDIA*/

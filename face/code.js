@@ -31,15 +31,14 @@ function change_name(){
     input.type="text";
     input.placeholder = user_name;
     input.style.border = "1px solid black"
-    input.style.width="80%";
+    input.style.width="90%";
     input.style.padding="5px";
     input.style.borderRadius="5px";
     
     button_submit.id="submit_name"
     button_submit.type="submit";
     button_submit.value="Mudar nome"
-    button_submit.style.margin="15px auto 0";
-    button_submit.style.padding="10px";
+    button_submit.style.padding="5px";
     button_submit.style.borderRadius="4px";
     button_submit.style.border="1px solid rgb(0, 132, 255)";
     button_submit.style.cursor="pointer"

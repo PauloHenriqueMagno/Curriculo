@@ -29,8 +29,7 @@
             <div id="main_stick-menu_container">
                 <div class="container">
                     <nav class="main_stick-menu">
-                        
-                        
+                           
                         <ul class="main_stick_menu_left">
                             <li class="mobile_hidden">
                                 <input class="hidden" type="radio" id="pub" name="menu" alt="Publicações">
@@ -42,7 +41,10 @@
                             </li>
                             <li class="mobile_hidden">
                                 <input class="hidden" type="radio" id="amigos" name="menu" alt="Amigos">
-                                <button><label for="amigos">Amigo</label></button>
+                                <button><label for="amigos">Amigos</label></button>
+                                <div class="friends">
+                                    <p>Você não tem amigos <img src="../image/sadface.png" alt="sad face"></p>
+                                </div>
                             </li>
                             <li class="mobile_hidden">
                                 <input class="hidden" type="radio" id="fotos" name="menu" alt="Fotos">
@@ -81,10 +83,75 @@
                             <li><button onclick="change_name()"><img src="../image/lapis.png">Editar nome</button></li>
                             <li><button>...</button></li>
                         </ul>
+
                     </nav>
                 </div>
             </div>
+
+            <div class="container flex">
+
+            <aside class="main_content_aside flex">
+
+                <section class="presentation flex">
+                    <h2>Apresentação</h2>
+                    <ul>
+                        <li><img src="../image/house.png"><p>Mora em <strong>São Paulo</strong></p></li>
+                        <li><img src="../image/gps.png"><p>De <strong>São Paulo</strong></p></li>
+                        <li><img src="../image/heart.png"><p>Em um relacionamento sério com <strong>Programação</strong></p></li>
+                    </ul>
+                    <button>Editar detalhes</button>
+                    <button>Adicionar hobbies</button>
+                    <button>Adicionar destaques</button>
+                </section>
+
+                <section class="main_content_aside_pictures">
+                    <div class="flex">
+                        <h2>Fotos</h2>
+                        <button>Ver todas as fotos</button>
+                    </div>
+                    <div class="pictures_grid grid">
+                    <img src="../image/duck.jpg" alt="foto de pato de borracha">
+                    <img src="../image/duck.jpg" alt="foto de pato de borracha">
+                    <img src="../image/duck.jpg" alt="foto de pato de borracha">
+                    <img src="../image/duck.jpg" alt="foto de pato de borracha">
+                    <img src="../image/duck.jpg" alt="foto de pato de borracha">
+                    <img src="../image/duck.jpg" alt="foto de pato de borracha">
+                    <img src="../image/duck.jpg" alt="foto de pato de borracha">
+                    <img src="../image/duck.jpg" alt="foto de pato de borracha">
+                    </div>
+                </section>
+
+            </aside>
+
+            <div class="main_content">
+                <section class="main_content_post_send">
+                    <div class="main_content_post_send_input flex">
+                        <img src="../image/user.png" alt="Usuário">
+                        <input class="hidden" type="button" name="what are you thinking?" id="post_input" value>
+                        <label for="post_input" >No que você está pensando?</label>
+                    </div>
+                    <div class="main_content_post_send_buttons flex">
+                        <button>
+                            <img src="../image/video_camera_red.png" alt="camera">
+                            Video ao vivo
+                        </button>
+                        <button>
+                            <img src="../image/photos.png" alt="fotos">
+                            Foto/video
+                        </button>
+                        <button>
+                            <img src="../image/flag_blue.png" alt="bandeira">
+                            Acontecimento
+                        </button>
+                    </div>
+                </section>
+                <section class="publications"></section>
+            </div>
+
+            </div>
+            </div>
         </main>
+
         <script type="text/javascript" src="code.js"></script>
     </body>
 </html>
