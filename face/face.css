@@ -265,8 +265,8 @@ main .main_stick_menu_right li:nth-child(1) button img{
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.356);
 }
 main div.container.flex{
-    margin: 10px auto;
-    padding: 0 10%;
+    margin: 0px auto;
+    padding: 15px 10%;
     flex-direction: column;
     column-gap: 15px;
 }
@@ -338,7 +338,7 @@ aside.main_content_aside section.main_aside{
 
 /*CONTENT*/
 .main_content{
-    margin: 0px 0px 10px 0px;
+    margin: 0px;
 }
 .main_content_post_send{
     width: 100%;
