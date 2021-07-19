@@ -267,8 +267,8 @@ main .main_stick_menu_right li:nth-child(1) button img{
 main div.container.flex{
     margin: 10px auto;
     padding: 0 10%;
-    gap: 1rem;
     flex-direction: column;
+    column-gap: 15px;
 }
 
 /*ASIDE*/
@@ -276,6 +276,7 @@ aside.main_content_aside{
     flex-direction: column;
     gap: 1rem;
     justify-content: flex-start;
+    margin-bottom: 10px;
 }
 .main_content_aside .presentation{
     width: 100%;
@@ -336,8 +337,7 @@ aside.main_content_aside{
 
 /*CONTENT*/
 .main_content{
-    margin: 0px 0px 0px 0px;
-    gap: 10px;
+    margin: 0px 0px 10px 0px;
 }
 .main_content_post_send{
     width: 100%;
@@ -486,19 +486,16 @@ aside.main_content_aside{
         padding: 0;
         margin: 10px auto;
         flex-direction: row;
-        gap: 15px
     }
     /*ASIDE*/
     aside.main_content_aside{
         flex-basis: 45%;
-        gap: 10px;
     }
     /*ASIDE*/
     
     /*CONTENT*/
     .main_content{
         flex-basis: 55%;
-        gap: 10px
     }
     .main_content_post_send_buttons{
         flex-wrap: nowrap;
