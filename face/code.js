@@ -9,9 +9,11 @@ function date(){
 
 const nome_class = (name) =>{ 
     const element = document.getElementsByClassName("user_name");
+    /*Alterar*/
     for(let i = 0; i<element.length; i++){
         element[i].innerText = name;
     }
+    /*Alterar*/
 }
 function nome(name){
     const element_user_name = document.getElementById("user_name");
@@ -22,6 +24,12 @@ function nome(name){
 }
 nome(user_name);
 
+function submit_name(name){
+    const popup_div = document.getElementById('close');
+    popup_div.remove();
+    user_name = name;
+    nome(user_name);
+}
 
 function change_name(){
     const element = document.getElementsByTagName("body");
@@ -40,10 +48,12 @@ function change_name(){
     background.style.top= "0px";
     background.style.zIndex="2";
     
-    form.className="form_name"
+    form.className="form_name";
+    form.id="form_name";
+    form.action = "#";
     
     hthree.innerText="Insira um novo nome:";
-
+    
     input.id="change_name";
     input.type="text";
     input.placeholder = user_name;
@@ -56,15 +66,9 @@ function change_name(){
     form.appendChild(hthree)
     form.appendChild(input);
     form.appendChild(button_submit);
+    form.onsubmit="return false"
     background.appendChild(form);
     element[0].appendChild(background);
-}
-
-function submit_name(text){
-    const popup_div = document.getElementById('close');
-    popup_div.remove();
-    user_name = text;
-    nome(text);
 }
 
 function submit_post(text){
