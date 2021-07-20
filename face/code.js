@@ -7,13 +7,21 @@ function date(){
     return `${day.getDate()} de ${months[month.getMonth()]}`
 }
 
+const nome_class = (name) =>{ 
+    const element = document.getElementsByClassName("user_name");
+    for(let i = 0; i<element.length; i++){
+        element[i].innerText = name;
+    }
+}
 function nome(name){
     const element_user_name = document.getElementById("user_name");
     element_user_name.innerText="";
-    const user_name = document.createTextNode(name);
-    element_user_name.appendChild(user_name);
+    const user_name_element = document.createTextNode(name);
+    element_user_name.appendChild(user_name_element);
+    nome_class(name);
 }
 nome(user_name);
+
 
 function change_name(){
     const element = document.getElementsByTagName("body");
@@ -55,7 +63,7 @@ function change_name(){
 function submit_name(text){
     const popup_div = document.getElementById('close');
     popup_div.remove();
-    user_name=text;
+    user_name = text;
     nome(text);
 }
 
@@ -79,6 +87,7 @@ function submit_post(text){
     
     img.src = "../image/user.png";
     hfour.innerText = user_name;
+    hfour.className = "user_name";
     date_p.innerText = date();
     
     div.className="flex_column";
