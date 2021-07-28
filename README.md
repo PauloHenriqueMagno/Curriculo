@@ -1,10 +1,7 @@
 <div>
   <a href="https://github.com/PauloHenriqueMagno">
-  <img width="100%" src="https://github-readme-stats.vercel.app/api?username=PauloHenriqueMagno&show_icons=true&include_all_commits=true&count_private=true"/>
-</div>
-<div>
-  <a href="https://github.com/PauloHenriqueMagno">
-  <img width="100%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=PauloHenriqueMagno&layout=compact&langs_count=9"/>
+  <img width="50%" src="https://github-readme-stats.vercel.app/api?username=PauloHenriqueMagno&show_icons=true&include_all_commits=true&count_private=true">
+  <img width="42%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=PauloHenriqueMagno&layout=compact&langs_count=9">
 </div>
 
 <div><br>
@@ -25,7 +22,7 @@
 Meu currículo contendo meus contatos, cursos e projetos que faço para práticar meus conhecimentos e habilidades.
 Para visitar o site use este link: https://www.paulohenriquemagno.tk/
 
-# My curriculum
+# My webcurriculum
 
 It's my curriculum that contain my contacts, curses and projects that I do to exercise my skills.
 To visite the website use this link: https://www.paulohenriquemagno.tk/
