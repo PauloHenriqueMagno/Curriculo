@@ -1,14 +1,16 @@
-<div style="display: grid; grid-templates-columns: 1fr 1fr">
-<div width="100%" style="flex-basis=50%">
+<div>
   <a href="https://github.com/PauloHenriqueMagno">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=PauloHenriqueMagno&show_icons=true&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=PauloHenriqueMagno&layout=compact&langs_count=9"/>
+  <img width="100%" src="https://github-readme-stats.vercel.app/api?username=PauloHenriqueMagno&show_icons=true&include_all_commits=true&count_private=true"/>
 </div>
-<div width="100%"><br>
+<div>
+  <a href="https://github.com/PauloHenriqueMagno">
+  <img width="100%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=PauloHenriqueMagno&layout=compact&langs_count=9"/>
+</div>
+
+<div><br>
   <img align="center" alt="Paulo-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
   <img align="center" alt="Paulo-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
   <img align="center" alt="Paulo-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
-</div>
 </div>
   
   ##
