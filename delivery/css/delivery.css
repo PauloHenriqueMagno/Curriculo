@@ -11,38 +11,43 @@ body{
 	background: rgb(245, 250, 255);
 }
 /*Header*/
-.header_title{
-	font-size: 2rem;
-	color: white;
-}
 header.header{
 	top: 0;
 	position: sticky;
-	height: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
 	width: 100%;
 	background-color: rgb(81, 16, 143);
 }
 .header_container{
 	max-width: 1000px;
-	display: flex;
-	flex-direction: row;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 80% 20%;
 	justify-content: space-between;
+	align-items: center;
 	padding: 15px;
 	z-index: 100;
-	margin: auto;
+}
+.header_title{
+	font-size: 200%;
+	color: white;
 }
 /*MENU BUTTON*/
 .header_menu button{
-	width: 40px;
-	height: 40px;
+	width: 70px;
+	height: 70px;
 	border-radius: 5px;
 	border: 1px solid white;
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 	align-items: center;
 	flex-direction: column;
 	background: none;
 	cursor: pointer;
+	float: right;
 }
 .header_menu button:hover{
 	border: 1px solid rgb(230, 230, 230);
@@ -52,8 +57,8 @@ header.header{
 }
 .header_menu button span{
 	background-color: white;
-	height: 4px;
-	width: 30px;
+	height: 10px;
+	width: 60px;
 	border-radius: 5px;
 	margin: 2px;
 }
@@ -61,9 +66,9 @@ header.header{
 /*MENU*/
 .menu_aside{
 	position: fixed;
-	height: calc(100vh - 70px);
+	height: calc(100vh - 100px);
 	width: 100vw;
-	top: 70px; 
+	top: 100px; 
 	background-color: rgb(100, 30, 190);
 	z-index: 0;
 	transition: 0.5s;
@@ -75,25 +80,25 @@ header.header{
 	margin: 4px 0px;
 	width: 100%;
 }
-.menu_aside ul li a:active{
-	border: 1px solid green;
-	color: green;
-}
 .menu_aside ul li a{
 	width: 100%;
 	padding: 10px;
 	border-radius: 5px;
 	border: 1px solid white;
 	color: white;
-	font-size: 2rem;
+	font-size: 200%;
 	display: block;
+}
+.menu_aside ul li a:active{
+	border: 1px solid green;
+	color: green;
 }
 /*MENU*/
 /*Header*/
 
 /*MAIN*/
 .cardapio{
-	width: 80%;
+	width: 90%;
 	max-width: 900px;
 	background-color: rgb(100, 30, 190);
 	padding: 2px 5px;
@@ -109,11 +114,15 @@ header.header{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	align-items: center;
 }
 .cardapio li div h4{
-	font-size: 1.5rem;
+	font-size: 150%;
 }
 .cardapio li div p{
-	font-size: 1.2rem
+	font-size: 130%
+}
+.cardapio li{
+	font-size: 110%;
 }
 /*MAIN*/
