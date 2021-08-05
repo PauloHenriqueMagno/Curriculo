@@ -2,36 +2,40 @@
 <html lang="pt-br">
 <head>
 	<meta charset="utf-8">
-	<meta type="autor" content="Paulo e Bruna">
+	<meta type="autor" content="Paulo Henrique Magno">
 	<title>Delivery Corporation</title>
-	<link rel="stylesheet" type="text/css" href="delivery.css">
+	<link rel="stylesheet" type="text/css" href="./css/delivery.css">
 
 </head>
 <body>
 
-	<div class="tudo">
-		<div class="cabecalho">
+	<header class="header">
+		<div class="header_container">
+		<h1 class="header_title">Delivery Corporation</h1>
 
-		<h1><a id="topo">Delivery Corporation</a></h1>
-
+		<nav id="menu" class="header_menu">
+		<button id="menu_button"><span></span><span></span><span></span></button>
+		<div class="menu_aside">
+			<ul>
+				<li><a href="#">Menu</a></li>
+				<li><a href="#">Cardápio</a></li>
+				<li><a href="#">Contato</a></li>
+				<li><a href="#">Sobre</a></li>
+				<li><a href="#">Ajuda</a></li>
+				<li><a href="../index.html">Voltar</a></li>
+			</ul>
+		</div>
+		</nav>
 		</div>
 
-		<div class="menu">
-		<ul>
-	    <li><a href="menu.html" target="_parent">Menu</a></li>
-	    <li><a href="cardapio.html">Cardápio</a></li>
-	    <li><a href="contato.html">Contato</a></li>
-	    <li><a href="sobre.html">Sobre</a></li>
-	    <li><a href="ajuda.html">Ajuda</a></li>
-	    <li><a href="../index.html">Voltar</a></li>
+	</header>
+
+	<main>
+		<ul class="cardapio">
 		</ul>
-		</div>
-		<main>
-			<iframe class="content" src="menu.html">
+	</main>
 
-			</iframe>
-		</main>
-	</div>
-
+	<script src="./js/menu.js"></script>
+	<script src="./js/script.js"></script>
 </body>
 </html>
