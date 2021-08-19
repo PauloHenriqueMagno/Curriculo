@@ -1,0 +1,94 @@
+/*EDITAR NOME*/
+#change_info{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.192);
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+    display: none;
+}
+.form_name{
+    position: fixed;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+    max-width: 700px;
+    background: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+#change_name{
+    border : 1px solid black;
+    width: 90%;
+    padding: 5px;
+    border-radius: 5px;
+}
+.form_name #submit_name{
+    margin: 10px;
+    background-color: var(--color-primary);
+    color: white;
+    padding:5px;
+    border-radius:4px;
+    border:1px solid rgb(0, 132, 255);
+    cursor:pointer;
+}
+/*EDITAR NOME*/
+
+/*PUBLICACAO*/
+#poster_form{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.192);
+    top: 0px;
+    display: none;
+    z-index: 3;
+}
+.form_publication{
+    width: 85%;
+    position: fixed;
+    background-color: white;
+    margin: auto;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.404);
+    align-items: center;
+    z-index: 3;
+}
+.form_publication h3{
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(180, 180, 180);
+}
+.form_publication textarea#publication{
+    width: 90%;
+    margin-top: 25px;
+    font-size: 1rem;
+    height: 60%;
+    resize: none;
+}
+.form_publication textarea#publication:focus{
+    outline: none;
+}
+.form_publication input#submit_post{
+    margin: 10px 0 15px;
+    width: 94%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--color-primary);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+/*PUBLICACAO*/
