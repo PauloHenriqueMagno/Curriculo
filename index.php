@@ -96,10 +96,10 @@
 								<span><a href="face/index.php" target="_blank">Facebook Header</a> - HTML, CSS e JavaScript</span>
 							</li>
 							<li>
-								<span><a href="delivery/delivery_corporation.html" target="_blank">Delivery</a> - HTML, CSS e JavaScript</span>
+								<span><a href="delivery/delivery_corporation.php" target="_blank">Delivery</a> - HTML, CSS e JavaScript</span>
 							</li>
 							<li>
-								<span><a href="Netduck/index.html" target="_blank">Netduck</a> - HTML e CSS</span>
+								<span><a href="Netduck/index.php" target="_blank">Netduck</a> - HTML e CSS</span>
 							</li>
 						</ul>
 					</main>
