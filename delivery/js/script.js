@@ -13,21 +13,30 @@ menu.addEventListener("click", function(){
     }
 })
 
-const add_menu = (array) => {
+const add_menu = (object) => {
     const cardapio_menu = document.getElementsByClassName("cardapio")[0];
     const li = document.createElement("li");
     const div = document.createElement("div");
+    const div_img = document.createElement("div");
+    const div_content = document.createElement("div");
     const h4 = document.createElement("h4");
-    const p = document.createElement("p");
+    const img = document.createElement("img");
+    const details = document.createElement("details");
     const price = document.createElement("p");
 
-    price.innerText = `R$${array.price.toFixed(2)}`;
-    p.innerText = `Descrição: ${array.description}\nAlerta alérgicos: ${array.alert}`;
-    h4.innerText = array.name;
+    price.innerText = `R$${object.price.toFixed(2)}`;
+    details.innerText = `Descrição: ${object.description}\nAlerta alérgicos: ${object.alert}`;
+    h4.innerText = object.name;
+    img.src = object.image
+    div_img.className = "div_img";
+    div_content.className = "div_content"
+    div_img.appendChild(img)
     div.appendChild(h4);
     div.appendChild(price);
-    li.appendChild(div);
-    li.appendChild(p);
+    div_content.appendChild(div);
+    div_content.appendChild(details);
+    li.appendChild(div_img);
+    li.appendChild(div_content);
     cardapio_menu.appendChild(li);
 }
 cardapio.forEach(add_menu);
