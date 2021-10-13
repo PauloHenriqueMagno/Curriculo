@@ -127,7 +127,7 @@ main article main ul{
 	margin: 8px 0 0 0;
 }
 main article main ul li{
-	margin:0 0 5px;
+	margin:15px 0 5px;
 }
 main article main ul li h3{
 	font-size: var(--font-size-padrão);
