@@ -1,29 +1,43 @@
+import ContainerComponent from "../Container";
 import {
   TitleStyled,
   ContentBoxStyled,
   ContentHeaderStyled,
   ContentMainStyled,
-  ProfileSectionStyled
+  ProfileSectionStyled,
+  ProfileDivStyled,
+  ProfileImageStyled,
+  ContactButtonStyled
 } from "./styled";
 
-const ProfileSection = () => {
+import { useSelector } from "react-redux";
+
+const ProfileSectionComponent = () => {
+  const { data } = useSelector(state => state.content)
+
   return (
-    <ProfileSectionStyled>
-      <ContentBoxStyled>
-        <ContentHeaderStyled>
-          <TitleStyled>Paulo Henrique Magno</TitleStyled>
-        </ContentHeaderStyled>
-        <ContentMainStyled>
-          <p>
-            Sou Desenvolvedor Front End, possuo experiência em trabalho em equipe adquirido em projetos na Kenzie Academy, sou aberto a novos desafios e tecnologias e sempre a dispor de novas tarefas.
-          </p>
-          <p>
-            Estou em busca de uma oportunidade para desenvolver e adquirir novos conhecimentos na área de programação.
-          </p>
-        </ContentMainStyled>
-      </ContentBoxStyled>
-    </ProfileSectionStyled>
+    <ContainerComponent>
+      <ProfileSectionStyled>
+        <ProfileDivStyled>
+          <ContentBoxStyled id="about">
+            <ContentHeaderStyled>
+              <TitleStyled>Paulo Henrique Magno</TitleStyled>
+            </ContentHeaderStyled>
+            <ContentMainStyled>
+              <p>
+                {data.resume}
+              </p>
+            </ContentMainStyled>
+            <ContactButtonStyled>
+              {data.titles.contact}
+            </ContactButtonStyled>
+          </ContentBoxStyled>
+          
+          <ProfileImageStyled />
+        </ProfileDivStyled>
+      </ProfileSectionStyled>     
+    </ContainerComponent>
   );
 };
 
-export default ProfileSection;
+export default ProfileSectionComponent;
