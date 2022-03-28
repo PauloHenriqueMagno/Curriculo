@@ -148,6 +148,42 @@ const languages = {
         "link": "https://galeranerd.vercel.app/",
         "image": "https://raw.githubusercontent.com/PauloHenriqueMagno/images/main/projects/galeranerd.png",
         "repository": "https://github.com/PauloHenriqueMagno/GaleraNerd",
+      },
+      {
+        "title": "Hamburgueria",
+        "link": "https://hamburgueria-2.vercel.app/",
+        "image": "https://raw.githubusercontent.com/PauloHenriqueMagno/images/main/projects/hamburgueria.png",
+        "repository": "https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-s5-hamburgueria-2-0-com-typescript-json-server-PauloHenriqueMagno",
+      },
+      {
+        "title": "Face",
+        "link": "https://paulohm-face.herokuapp.com/",
+        "image": "https://raw.githubusercontent.com/PauloHenriqueMagno/images/main/projects/facebook.png",
+        "repository": "https://github.com/PauloHenriqueMagno/face",
+      },
+      {
+        "title": "Galera Nerd",
+        "link": "https://galeranerd.vercel.app/",
+        "image": "https://raw.githubusercontent.com/PauloHenriqueMagno/images/main/projects/galeranerd.png",
+        "repository": "https://github.com/PauloHenriqueMagno/GaleraNerd",
+      },
+      {
+        "title": "Hamburgueria",
+        "link": "https://hamburgueria-2.vercel.app/",
+        "image": "https://raw.githubusercontent.com/PauloHenriqueMagno/images/main/projects/hamburgueria.png",
+        "repository": "https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-s5-hamburgueria-2-0-com-typescript-json-server-PauloHenriqueMagno",
+      },
+      {
+        "title": "Face",
+        "link": "https://paulohm-face.herokuapp.com/",
+        "image": "https://raw.githubusercontent.com/PauloHenriqueMagno/images/main/projects/facebook.png",
+        "repository": "https://github.com/PauloHenriqueMagno/face",
+      },
+      {
+        "title": "Galera Nerd",
+        "link": "https://galeranerd.vercel.app/",
+        "image": "https://raw.githubusercontent.com/PauloHenriqueMagno/images/main/projects/galeranerd.png",
+        "repository": "https://github.com/PauloHenriqueMagno/GaleraNerd",
       }
     ],
   }
