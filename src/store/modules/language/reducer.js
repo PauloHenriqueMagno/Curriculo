@@ -10,7 +10,7 @@ const languages = {
       "contact": "Contato",
       "socialMedia": "Redes Sociais"
     },
-    "resume": "Sou Desenvolvedor Front End, tenho experiência em trabalho em equipe adquirido em projetos na Kenzie Academy. Atualmente estudando NoSQL e API utilizando Flask. Estou em busca da minha primeira oportunidade no mercado de trabalho para ganhar experiência e aprimorar minhas habilidades como programador.",
+    "resume": "Sou Desenvolvedor Front End, tenho experiência em trabalho em equipe adquirido em projetos na Kenzie Academy. Atualmente estudando API utilizando express do Node. Estou em busca da minha primeira oportunidade no mercado de trabalho para ganhar experiência e aprimorar minhas habilidades como programador.",
     "links": {
       "resume": "Curriculo"
     },
@@ -24,7 +24,7 @@ const languages = {
       "contact": "Contact",
       "socialMedia": "Social Media"
     },
-    "resume": "I'm Front End Developer, I have experience in teamwork acquired in projects at Kenzie Academy. Currently I'm studying NoSQL and API using Flask. I'm looking  for my first  opportunity at job market to gain experience and improve my skills as a programmer.",
+    "resume": "I'm Front End Developer, I have experience in teamwork acquired in projects at Kenzie Academy. Currently I'm studying API using express from Node. I'm looking for my first opportunity at job market to gain experience and improve my skills as a programmer.",
     "links": {
       "resume": "Resume"
     },
@@ -112,78 +112,17 @@ const languages = {
         "image": "https://raw.githubusercontent.com/PauloHenriqueMagno/images/main/projects/galeranerd.png",
         "repository": "https://github.com/PauloHenriqueMagno/GaleraNerd",
       },
-
       {
-        "title": "Hamburgueria",
-        "link": "https://hamburgueria-2.vercel.app/",
-        "image": "https://raw.githubusercontent.com/PauloHenriqueMagno/images/main/projects/hamburgueria.png",
-        "repository": "https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-s5-hamburgueria-2-0-com-typescript-json-server-PauloHenriqueMagno",
+        "title": "Delivery",
+        "link": "https://delivery-shop.vercel.app/",
+        "image": "https://raw.githubusercontent.com/PauloHenriqueMagno/images/main/projects/delivery-shop.png",
+        "repository": "https://github.com/PauloHenriqueMagno/delivery_shop",
       },
       {
-        "title": "Face",
-        "link": "https://paulohm-face.herokuapp.com/",
-        "image": "https://raw.githubusercontent.com/PauloHenriqueMagno/images/main/projects/facebook.png",
-        "repository": "https://github.com/PauloHenriqueMagno/face",
-      },
-      {
-        "title": "Galera Nerd",
-        "link": "https://galeranerd.vercel.app/",
-        "image": "https://raw.githubusercontent.com/PauloHenriqueMagno/images/main/projects/galeranerd.png",
-        "repository": "https://github.com/PauloHenriqueMagno/GaleraNerd",
-      },
-      {
-        "title": "Hamburgueria",
-        "link": "https://hamburgueria-2.vercel.app/",
-        "image": "https://raw.githubusercontent.com/PauloHenriqueMagno/images/main/projects/hamburgueria.png",
-        "repository": "https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-s5-hamburgueria-2-0-com-typescript-json-server-PauloHenriqueMagno",
-      },
-      {
-        "title": "Face",
-        "link": "https://paulohm-face.herokuapp.com/",
-        "image": "https://raw.githubusercontent.com/PauloHenriqueMagno/images/main/projects/facebook.png",
-        "repository": "https://github.com/PauloHenriqueMagno/face",
-      },
-      {
-        "title": "Galera Nerd",
-        "link": "https://galeranerd.vercel.app/",
-        "image": "https://raw.githubusercontent.com/PauloHenriqueMagno/images/main/projects/galeranerd.png",
-        "repository": "https://github.com/PauloHenriqueMagno/GaleraNerd",
-      },
-      {
-        "title": "Hamburgueria",
-        "link": "https://hamburgueria-2.vercel.app/",
-        "image": "https://raw.githubusercontent.com/PauloHenriqueMagno/images/main/projects/hamburgueria.png",
-        "repository": "https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-s5-hamburgueria-2-0-com-typescript-json-server-PauloHenriqueMagno",
-      },
-      {
-        "title": "Face",
-        "link": "https://paulohm-face.herokuapp.com/",
-        "image": "https://raw.githubusercontent.com/PauloHenriqueMagno/images/main/projects/facebook.png",
-        "repository": "https://github.com/PauloHenriqueMagno/face",
-      },
-      {
-        "title": "Galera Nerd",
-        "link": "https://galeranerd.vercel.app/",
-        "image": "https://raw.githubusercontent.com/PauloHenriqueMagno/images/main/projects/galeranerd.png",
-        "repository": "https://github.com/PauloHenriqueMagno/GaleraNerd",
-      },
-      {
-        "title": "Hamburgueria",
-        "link": "https://hamburgueria-2.vercel.app/",
-        "image": "https://raw.githubusercontent.com/PauloHenriqueMagno/images/main/projects/hamburgueria.png",
-        "repository": "https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-s5-hamburgueria-2-0-com-typescript-json-server-PauloHenriqueMagno",
-      },
-      {
-        "title": "Face",
-        "link": "https://paulohm-face.herokuapp.com/",
-        "image": "https://raw.githubusercontent.com/PauloHenriqueMagno/images/main/projects/facebook.png",
-        "repository": "https://github.com/PauloHenriqueMagno/face",
-      },
-      {
-        "title": "Galera Nerd",
-        "link": "https://galeranerd.vercel.app/",
-        "image": "https://raw.githubusercontent.com/PauloHenriqueMagno/images/main/projects/galeranerd.png",
-        "repository": "https://github.com/PauloHenriqueMagno/GaleraNerd",
+        "title": "Khabitz",
+        "link": "https://khabitz.vercel.app/",
+        "image": "https://raw.githubusercontent.com/PauloHenriqueMagno/images/main/projects/khabitz.png",
+        "repository": "https://github.com/PauloHenriqueMagno/KenzieHabits",
       }
     ],
   }

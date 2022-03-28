@@ -18,11 +18,11 @@ const ProjectsSectionComponent = () => {
 
   const width = useCurrentWidth();
   const className = width < 600 ? 'twoCards': width < 900 ? 'threeCards': 'fiveCards';
-  const howMuchProjectsRender = className === 'twoCards'? 2 : className === 'threeCards' ? 3 : 5;
+  const maxPerPage = className === 'twoCards'? 2 : className === 'threeCards' ? 3 : 5;
   
   const [projects, setProjects] = useState([]);
   const [page, setPage] = useState(0);
-  const maxPage = Math.ceil( data.projects.length / howMuchProjectsRender );
+  const maxPage = Math.ceil( data.projects.length / maxPerPage );
 
   const ShowProjectsCard = (projects) => {
     return projects.map(project => {
@@ -67,8 +67,8 @@ const ProjectsSectionComponent = () => {
   const getProjects = () => {
     const newProjectsList = [];
 
-    for (let index = 0; index < howMuchProjectsRender; index++){
-      const project = data.projects[index + (page*howMuchProjectsRender)]
+    for (let index = 0; index < maxPerPage; index++){
+      const project = data.projects[index + (page*maxPerPage)]
 
       if (project){
         newProjectsList.push(project)
@@ -79,9 +79,11 @@ const ProjectsSectionComponent = () => {
   }
 
   const ShowPagesButtons = () => {
+    const maxButtons = maxPerPage === 5 ? 7 : 5;
+    const limitButtons = Math.ceil(maxButtons/2); // Max buttons around the button from actual page
     const buttons = []
     for (let buttonPage = 0; buttonPage < maxPage; buttonPage++){
-      if (buttons.length < 5 && (page <= 2 || (buttonPage >= (maxPage - 5)) || (buttonPage > (page - 3) && buttonPage < (page + 3)))){
+      if (buttons.length < maxButtons && (page < limitButtons || (buttonPage >= (maxPage - maxButtons)) || (buttonPage > (page - limitButtons) && buttonPage < (page + limitButtons)))){
         buttons.push(
           <button
             onClick={() => changePage(buttonPage)}
@@ -102,7 +104,7 @@ const ProjectsSectionComponent = () => {
     getProjects();
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [page, howMuchProjectsRender]);
+  }, [page, maxPerPage]);
 
   return (
     <ProjectsSectionStyled id="projects">
