@@ -10,7 +10,7 @@ const languages = {
       "contact": "Contato",
       "socialMedia": "Redes Sociais"
     },
-    "resume": "Sou Desenvolvedor Front End, tenho experiência em trabalho em equipe adquirido em projetos na Kenzie Academy. Atualmente estudando API utilizando express do Node. Estou em busca da minha primeira oportunidade no mercado de trabalho para ganhar experiência e aprimorar minhas habilidades como programador.",
+    "resume": "Sou Desenvolvedor Full Stack, tenho experiência em metodologias Scrum e Kanban e em trabalho em equipe adquiridos em projetos front e back end na Kenzie Academy. Estou em busca da minha primeira oportunidade no mercado de trabalho para adquirir experiência e aprimorar minhas atuais habilidades como programador.",
     "links": {
       "resume": "Curriculo"
     },
@@ -24,7 +24,7 @@ const languages = {
       "contact": "Contact",
       "socialMedia": "Social Media"
     },
-    "resume": "I'm Front End Developer, I have experience in teamwork acquired in projects at Kenzie Academy. Currently I'm studying API using express from Node. I'm looking for my first opportunity at job market to gain experience and improve my skills as a programmer.",
+    "resume": "I am a Full Stack Developer, I have experience in Scrum and Kanban methodologies and teamwork acquired in front and back end projects at Kenzie Academy. I'm looking for my first opportunity in the job market to gain experience and improve my current skills as a programmer.",
     "links": {
       "resume": "Resume"
     },
@@ -48,6 +48,10 @@ const languages = {
         "name": "Flask"
       },
       {
+        "image": "https://raw.githubusercontent.com/PauloHenriqueMagno/images/main/languages/svg/sqlalchemy.svg",
+        "name": "SQLAlchemy"
+      },
+      {
         "image": "https://raw.githubusercontent.com/PauloHenriqueMagno/images/main/languages/svg/postgresql.svg",
         "name": "PostgreSQL"
       },
@@ -62,6 +66,10 @@ const languages = {
       {
         "image": "https://raw.githubusercontent.com/PauloHenriqueMagno/images/main/languages/svg/node.svg",
         "name": "NodeJS"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/PauloHenriqueMagno/images/main/languages/svg/express.svg",
+        "name": "ExpressJS"
       },
       {
         "image": "https://raw.githubusercontent.com/PauloHenriqueMagno/images/main/languages/svg/react.svg",
@@ -82,6 +90,10 @@ const languages = {
       {
         "image": "https://raw.githubusercontent.com/PauloHenriqueMagno/images/main/languages/svg/php.svg",
         "name": "PHP"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/PauloHenriqueMagno/images/main/languages/svg/docker.svg",
+        "name": "Docker"
       },
       {
         "image": "https://raw.githubusercontent.com/PauloHenriqueMagno/images/main/languages/svg/git.svg",
@@ -123,6 +135,12 @@ const languages = {
         "link": "https://khabitz.vercel.app/",
         "image": "https://raw.githubusercontent.com/PauloHenriqueMagno/images/main/projects/khabitz.png",
         "repository": "https://github.com/PauloHenriqueMagno/KenzieHabits",
+      },
+      {
+        "title": "Netduck",
+        "link": "https://netduck.herokuapp.com/",
+        "image": "https://raw.githubusercontent.com/PauloHenriqueMagno/images/main/projects/netduck.png",
+        "repository": "https://github.com/PauloHenriqueMagno/netduck",
       }
     ],
   }
