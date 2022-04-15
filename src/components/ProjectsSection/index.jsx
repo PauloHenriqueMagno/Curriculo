@@ -38,6 +38,7 @@ const ProjectsSectionComponent = () => {
                 src={project.image}
                 alt={project.title}
                 class="project-image"
+                loading='eager'
                 />
             </a>
             <div class="info">

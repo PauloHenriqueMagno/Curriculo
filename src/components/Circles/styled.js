@@ -8,3 +8,11 @@ export const DivCirclesStyled = styled.div`
   transform: translate(-50%, -36%);
   z-index: -1;
 `;
+
+export const DivCirclesContactsSectionStyled = styled.div`
+  position: absolute;
+  width: 90%;
+  max-width: 1100px;
+  transform: translate(0%, 5%);
+  z-index: -1;
+`;

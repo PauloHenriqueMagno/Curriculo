@@ -39,11 +39,7 @@ const HeaderComponent = () => {
               {data.titles.projects}
             </HeaderNavLinkStyled>
 
-            <HeaderNavLinkStyled color={theme.wine} href="#certifications">
-              {data.titles.certifications}
-            </HeaderNavLinkStyled>
-
-            <HeaderNavLinkStyled color={theme.yellow} href="#contact">
+            <HeaderNavLinkStyled color={theme.yellow} href="#contacts">
               {data.titles.contact}
             </HeaderNavLinkStyled>
 

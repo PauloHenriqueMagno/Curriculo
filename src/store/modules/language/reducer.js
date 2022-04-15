@@ -12,7 +12,8 @@ const languages = {
     },
     "resume": "Sou Desenvolvedor Full Stack, tenho experiência em metodologias Scrum e Kanban e em trabalho em equipe adquiridos em projetos front e back end na Kenzie Academy. Estou em busca da minha primeira oportunidade no mercado de trabalho para adquirir experiência e aprimorar minhas atuais habilidades como programador.",
     "links": {
-      "resume": "Curriculo"
+      "resume": "Curriculo",
+      "resumeFile": "https://drive.google.com/file/d/1BHD_cVrVZ5jmi0-4NNrpARd1xVGKd8_c/view?usp=sharing"
     },
   },
   "EN": {
@@ -26,8 +27,10 @@ const languages = {
     },
     "resume": "I am a Full Stack Developer, I have experience in Scrum and Kanban methodologies and teamwork acquired in front and back end projects at Kenzie Academy. I'm looking for my first opportunity in the job market to gain experience and improve my current skills as a programmer.",
     "links": {
-      "resume": "Resume"
+      "resume": "Curriculum",
+      "resumeFile": "https://drive.google.com/file/d/1eYGIIDAmpEaoE9_iSfsDkda5kemPNzy-/view?usp=sharing"
     },
+
   },
   "content": {
     "languages": [
@@ -143,6 +146,16 @@ const languages = {
         "repository": "https://github.com/PauloHenriqueMagno/netduck",
       }
     ],
+    "contacts": {
+      "email": "paulohm2309@outlook.com",
+      "cel": "+55 (11) 94912-9901",
+    },
+    "socialMedia": {
+      "linkedin": "https://www.linkedin.com/in/paulohenriquemagno/",
+      "github": "https://github.com/PauloHenriqueMagno",
+      "instagram": "https://www.instagram.com/paulohenrique.magno",
+      "whatsapp": "https://wa.me/+551194129901"
+    }
   }
 }
 

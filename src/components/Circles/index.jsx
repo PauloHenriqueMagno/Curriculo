@@ -1,6 +1,6 @@
-import { DivCirclesStyled } from "./styled";
+import { DivCirclesStyled, DivCirclesContactsSectionStyled } from "./styled";
 
-const CirclesSkillsSectionComponent = () => {
+export const CirclesSkillsSectionComponent = () => {
   return (
     <DivCirclesStyled>
       <svg width="100%" height="100%" viewBox="0 0 665 118" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -12,4 +12,15 @@ const CirclesSkillsSectionComponent = () => {
   );
 };
 
-export default CirclesSkillsSectionComponent;
+export const CirclesContactsSectionComponent = () => {
+  return (
+    <DivCirclesContactsSectionStyled>
+      <svg width="100%" height="100%" viewBox="0 0 668 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 41.8605C0 18.7416 20.1472 0 45 0C69.8528 0 90 18.7416 90 41.8605V48.1395C90 71.2584 69.8528 90 45 90C20.1472 90 0 71.2584 0 48.1394V41.8605Z" fill="#DBFFE5"/>
+        <path d="M389 56.0001C389 33.9086 408.252 16 432 16C455.748 16 475 33.9086 475 56.0001V61.9999C475 84.0914 455.748 102 432 102C408.252 102 389 84.0913 389 61.9999V56.0001Z" fill="#CD9CD5"/>
+        <path d="M177 69.2094C177 48.6592 194.909 32 217 32C239.091 32 257 48.6592 257 69.2094V74.7906C257 95.3408 239.091 112 217 112C194.909 112 177 95.3408 177 74.7906V69.2094Z" fill="#DAE9FF"/>
+        <path d="M585 61.6047C585 40.2839 603.58 23 626.5 23C649.42 23 668 40.2839 668 61.6047V67.3953C668 88.7161 649.42 106 626.5 106C603.58 106 585 88.7161 585 67.3953V61.6047Z" fill="#FFF5DB"/>
+      </svg>
+    </DivCirclesContactsSectionStyled>
+  );
+};

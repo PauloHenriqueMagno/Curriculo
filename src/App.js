@@ -3,6 +3,7 @@ import HeaderComponent from './components/Header';
 import ProfileSectionComponent from './components/ProfileSection';
 import SkillsSectionComponent from './components/SkillsSection';
 import ProjectsSectionComponent from './components/ProjectsSection'
+import ContactsSectionComponent from './components/ContactsSection';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <ProfileSectionComponent />
       <SkillsSectionComponent />
       <ProjectsSectionComponent />
+      <ContactsSectionComponent />
     </>
   );
 }

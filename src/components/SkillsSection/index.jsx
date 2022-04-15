@@ -4,7 +4,7 @@ import {
 } from "./styled";
 
 import ContainerComponent from "../Container"
-import CirclesSkillsSectionComponent from "../Circles";
+import { CirclesSkillsSectionComponent } from "../Circles";
 
 import { useSelector } from "react-redux"
 
