@@ -38,7 +38,7 @@ const ContactsSectionComponent = () => {
                     </a>
                   </li>
                   <li>
-                    <a href={data.socialMedia.github} target="_blank" rel="noreferrer">
+                    <a href={data.socialMedia.linkedin} target="_blank" rel="noreferrer">
                       <img src="https://raw.githubusercontent.com/PauloHenriqueMagno/images/main/languages/svg/linkedin.svg" alt="Linkedin" />
                     </a>
                   </li>
