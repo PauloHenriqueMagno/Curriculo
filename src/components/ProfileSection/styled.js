@@ -53,7 +53,7 @@ export const TitleStyled = styled.h1`
   font-weight: 600;
 `;
 
-export const ContactButtonStyled = styled.button`
+export const ContactButtonStyled = styled.a`
   padding: 20px 60px;
   background: #2639ED;
   color: #FFFFFF;
@@ -61,6 +61,7 @@ export const ContactButtonStyled = styled.button`
   font-weight: 600;
   border-radius: 40px;
   width: min-content;
+  text-decoration: none;
 
   &:hover {
     filter: brightness(70%)

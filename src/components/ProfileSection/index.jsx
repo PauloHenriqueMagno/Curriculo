@@ -28,7 +28,7 @@ const ProfileSectionComponent = () => {
                 {data.resume}
               </p>
             </ContentMainStyled>
-            <ContactButtonStyled>
+            <ContactButtonStyled href="#contacts">
               {data.titles.contact}
             </ContactButtonStyled>
           </ContentBoxStyled>
