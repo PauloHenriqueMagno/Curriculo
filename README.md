@@ -1,6 +1,6 @@
 # My webcurriculum
 
-It's my portifolio that contain my contacts, projects and current skills.
+It's my portfolio that contain my contacts, projects and current skills.
 To visite the website use this link: https://paulohenriquemagno.vercel.app/
 
 Languages and libs used:
