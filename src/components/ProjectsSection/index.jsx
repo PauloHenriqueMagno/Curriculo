@@ -1,50 +1,60 @@
-import { useEffect, useState } from 'react';
-import { useSelector } from 'react-redux';
+import { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
 
-import useCurrentWidth from '../../services/useCurrentWidth';
+import useCurrentWidth from "../../services/useCurrentWidth";
 
-import Container from '../Container';
+import Container from "../Container";
 
-import Arrow from '../../assets/Arrow';
+import Arrow from "../../assets/Arrow";
 
 import {
   ProjectsSectionStyled,
   ProjectsListStyled,
-  ArrowChangePage
-} from './styled';
+  ArrowChangePage,
+} from "./styled";
 
 const ProjectsSectionComponent = () => {
-  const { data } = useSelector( state => state.content);
+  const { data } = useSelector((state) => state.content);
 
   const width = useCurrentWidth();
-  const className = width < 600 ? 'twoCards': width < 900 ? 'threeCards': 'fiveCards';
-  const maxPerPage = className === 'twoCards'? 2 : className === 'threeCards' ? 3 : 5;
-  
-  const [projects, setProjects] = useState([]);
-  const [page, setPage] = useState(0);
-  const maxPage = Math.ceil( data.projects.length / maxPerPage );
+  const className = width < 600 ? "twoCards" : width < 900 ? "threeCards" : "fiveCards";
+  const maxPerPage = className === "twoCards" ? 2 : className === "threeCards" ? 3 : 5;
 
-  const ShowProjectsCard = (projects) => {
-    return projects.map(project => {
-      if (project === {}){
-        return <></>
+  const [page, setPage] = useState(0);
+  const maxPage = Math.ceil(data.projects.length / maxPerPage);
+
+  const ShowProjectsCard = () => {
+    const newProjectsList = [];
+    
+    for (let index = 0; index < maxPerPage; index++) {
+      const project = data.projects[index + page * maxPerPage];
+  
+      if (project) {
+        newProjectsList.push(project);
       }
+    }
+    
+    return data.projects.map((project, index) => {
+      const filterCards = () => {
+        return (
+          index >= ((page + 1) * maxPerPage)? 'hidden':
+          index < (page * maxPerPage)? 'hidden': ''
+        );
+      } 
 
       return (
-        <li class="cards">
+        <li class={`cards ${filterCards()}`}>
           <div class="project-card">
             <a href={project.link} target="_blank" rel="noreferrer">
               <img
                 src={project.image}
                 alt={project.title}
                 class="project-image"
-                loading='eager'
+                loading="eager"
                 />
             </a>
             <div class="info">
-              <h3 class="title">
-                {project.title}
-              </h3>
+              <h3 class="title">{project.title}</h3>
               <a href={project.repository} target="_blank" rel="noreferrer">
                 <img
                   src="https://raw.githubusercontent.com/PauloHenriqueMagno/images/main/languages/svg/github.svg"
@@ -60,51 +70,42 @@ const ProjectsSectionComponent = () => {
   };
 
   const changePage = (page) => {
-    if(page >= 0 && page < maxPage){
+    if (page >= 0 && page < maxPage) {
       setPage(page);
-    };
-  };
-
-  const getProjects = () => {
-    const newProjectsList = [];
-
-    for (let index = 0; index < maxPerPage; index++){
-      const project = data.projects[index + (page*maxPerPage)]
-
-      if (project){
-        newProjectsList.push(project)
-      }
     }
-
-    setProjects(newProjectsList);
-  }
+  };
 
   const ShowPagesButtons = () => {
     const maxButtons = maxPerPage === 5 ? 7 : 5;
-    const limitButtons = Math.ceil(maxButtons/2); // Max buttons around the button from actual page
-    const buttons = []
-    for (let buttonPage = 0; buttonPage < maxPage; buttonPage++){
-      if (buttons.length < maxButtons && (page < limitButtons || (buttonPage >= (maxPage - maxButtons)) || (buttonPage > (page - limitButtons) && buttonPage < (page + limitButtons)))){
+    const limitButtons = Math.ceil(maxButtons / 2); // Max buttons around the button from actual page
+    const buttons = [];
+    for (let buttonPage = 0; buttonPage < maxPage; buttonPage++) {
+      if (
+        buttons.length < maxButtons &&
+        (page < limitButtons ||
+          buttonPage >= maxPage - maxButtons ||
+          (buttonPage > page - limitButtons &&
+            buttonPage < page + limitButtons))
+      ) {
         buttons.push(
           <button
             onClick={() => changePage(buttonPage)}
-            id={`page${buttonPage+1}`}
-            class={buttonPage === page ? 'actualPage': ''}
+            id={`page${buttonPage + 1}`}
+            class={buttonPage === page ? "actualPage" : ""}
           >
-            {buttonPage+1}
+            {buttonPage + 1}
           </button>
         );
-      };
-    };
+      }
+    }
 
     return buttons;
   };
 
-  useEffect(()=>{
-    setPage(e => e);
-    getProjects();
+  useEffect(() => {
+    setPage((e) => e);
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [page, maxPerPage]);
 
   return (
@@ -112,28 +113,20 @@ const ProjectsSectionComponent = () => {
       <Container>
         <h2>{data.titles.projects}</h2>
         <ProjectsListStyled id={className}>
-          {ShowProjectsCard(projects)}
+          {ShowProjectsCard()}
         </ProjectsListStyled>
 
         <nav>
-          <ArrowChangePage
-            onClick={() => changePage(page-1)}
-          >
+          <ArrowChangePage onClick={() => changePage(page - 1)}>
             <Arrow />
           </ArrowChangePage>
 
-          <div class="pagesButtons">
-            {ShowPagesButtons()}
-          </div>
+          <div class="pagesButtons">{ShowPagesButtons()}</div>
 
-          <ArrowChangePage
-            onClick={() => changePage(page+1)}
-            id="next"
-          >
+          <ArrowChangePage onClick={() => changePage(page + 1)} id="next">
             <Arrow />
           </ArrowChangePage>
         </nav>
-
       </Container>
     </ProjectsSectionStyled>
   );
